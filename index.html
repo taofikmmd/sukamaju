@@ -134,7 +134,7 @@
       class="relative min-h-screen flex items-center justify-center bg-slate-900 pt-16 overflow-hidden"
     >
       <img
-        src="https://images.unsplash.com/photo-1598902108854-10e335adac99?q=80&w=1920"
+        src="asset/img/IMG_20260708_163837_257.jpg"
         alt="Pemandangan Desa"
         class="absolute inset-0 w-full h-full object-cover opacity-40"
       />
@@ -802,7 +802,154 @@
         </div>
       </div>
     </section>
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-12 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- Section Header -->
+        <div class="text-center mb-12">
+          <div class="flex items-center justify-center gap-4 mb-5">
+            <div class="h-[1px] w-12 bg-slate-300"></div>
+            <span
+              class="text-xs font-normal text-slate-500 uppercase tracking-[0.25em]"
+            >
+              Gallery & Kegiatan
+            </span>
+            <div class="h-[1px] w-12 bg-slate-300"></div>
+          </div>
 
+          <h2 class="text-2xl md:text-5xl font-normal text-emerald-600 mb-6">
+            Gallery Wisata <br class="hidden sm:block" />
+            <span
+              class="bg-gradient-to-r from-emerald-600 font-bold via-emerald-500 to-teal-600 bg-clip-text text-transparent"
+            >
+              Desa Sukamaju
+            </span>
+          </h2>
+          <p class="text-slate-500 max-w-md mx-auto mt-2">
+            Menikmati keindahan lanskap alam, tugu ikonik, dan pesona pedesaan
+            yang asri serta menenangkan jiwa.
+          </p>
+        </div>
+
+        <!-- Gallery Grid (Responsif & Kreatif) -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Item 1 (Bukit & Awan/Langit) -->
+          <div
+            class="relative overflow-hidden rounded-xl shadow-lg group cursor-pointer"
+          >
+            <!-- Image -->
+            <img
+              src="asset/img/hero.jpg"
+              alt="Lembah Puncak Sukamaju"
+              class="w-full h-64 object-cover transform transition duration-500 group-hover:scale-110"
+            />
+
+            <!-- Absolute Text Overlay (Selalu Muncul) -->
+            <div
+              class="absolute inset-x-0 bottom-0 p-5 bg-gradient-to-t from-slate-950/90 via-slate-950/40 to-transparent pt-16 flex flex-col justify-end"
+            >
+              <!-- Tag Kategori -->
+              <span
+                class="text-[10px] font-semibold text-emerald-400 uppercase tracking-wider mb-1"
+              >
+                Wisata Alam
+              </span>
+              <!-- Judul -->
+              <h3 class="text-lg font-bold text-white leading-tight">
+                Puncak Bukit Hijau
+              </h3>
+              <!-- Deskripsi Singkat -->
+              <p
+                class="text-xs text-slate-200 mt-1 font-light opacity-90 line-clamp-2"
+              >
+                Pesona panorama perbukitan berkabut dengan bentang langit senja
+                yang meneduhkan pikiran.
+              </p>
+              <!-- Garis aksen hijau yang melebar saat di-hover -->
+              <div
+                class="h-[2px] w-0 bg-emerald-500 mt-3 transition-all duration-300 group-hover:w-12"
+              ></div>
+            </div>
+          </div>
+
+          <!-- Item 2 (Tugu Batas Desa) -->
+          <div
+            class="relative overflow-hidden rounded-xl shadow-lg group cursor-pointer"
+          >
+            <!-- Image -->
+            <img
+              src="asset/img/IMG-20260708-WA0017.jpg"
+              alt="Tugu Batas Desa Sukamaju"
+              class="w-full h-64 object-cover transform transition duration-500 group-hover:scale-110"
+            />
+
+            <!-- Absolute Text Overlay -->
+            <div
+              class="absolute inset-x-0 bottom-0 p-5 bg-gradient-to-t from-slate-950/90 via-slate-950/40 to-transparent pt-16 flex flex-col justify-end"
+            >
+              <!-- Tag Kategori -->
+              <span
+                class="text-[10px] font-semibold text-emerald-400 uppercase tracking-wider mb-1"
+              >
+                Ikon Wilayah
+              </span>
+              <!-- Judul -->
+              <h3 class="text-lg font-bold text-white leading-tight">
+                Tugu Batas Desa
+              </h3>
+              <!-- Deskripsi Singkat -->
+              <p
+                class="text-xs text-slate-200 mt-1 font-light opacity-90 line-clamp-2"
+              >
+                Titik sambut ikonik penanda wilayah administratif sekaligus
+                gerbang kehangatan Desa Sukamaju.
+              </p>
+              <div
+                class="h-[2px] w-0 bg-emerald-500 mt-3 transition-all duration-300 group-hover:w-12"
+              ></div>
+            </div>
+          </div>
+
+          <!-- Item 3 (Lembah & Terasering Hijau) -->
+          <div
+            class="relative overflow-hidden rounded-xl shadow-lg group cursor-pointer"
+          >
+            <!-- Image -->
+            <img
+              src="asset/img/IMG_20260708_163837_257.jpg"
+              alt="Terasering Sawah Asri"
+              class="w-full h-64 object-cover transform transition duration-500 group-hover:scale-110"
+            />
+
+            <!-- Absolute Text Overlay -->
+            <div
+              class="absolute inset-x-0 bottom-0 p-5 bg-gradient-to-t from-slate-950/90 via-slate-950/40 to-transparent pt-16 flex flex-col justify-end"
+            >
+              <!-- Tag Kategori -->
+              <span
+                class="text-[10px] font-semibold text-emerald-400 uppercase tracking-wider mb-1"
+              >
+                Ekowisata
+              </span>
+              <!-- Judul -->
+              <h3 class="text-lg font-bold text-white leading-tight">
+                Terasering Sawah Asri
+              </h3>
+              <!-- Deskripsi Singkat -->
+              <p
+                class="text-xs text-slate-200 mt-1 font-light opacity-90 line-clamp-2"
+              >
+                Bentangan sawah bertingkat hijau subur yang mencerminkan
+                kearifan lokal agraris masyarakat setempat.
+              </p>
+              <div
+                class="h-[2px] w-0 bg-emerald-500 mt-3 transition-all duration-300 group-hover:w-12"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <section
       id="kontak"
       class="py-24 bg-slate-900 text-white w-full overflow-hidden"
@@ -826,8 +973,8 @@
             <div class="flex items-start gap-3">
               <i class="bi bi-geo-alt-fill text-emerald-400 text-xl mt-0.5"></i>
               <span
-                >Jl. Raya Utama Desa No. 12, Kec. Contoh, Kab. Sumedang, Jawa
-                Barat</span
+                >Jalan Raya Subang - Cikamurang, Sukamaju, Kec. Rancakalong,
+                Kabupaten Sumedang, Jawa Barat</span
               >
             </div>
             <div class="flex items-center gap-3">
@@ -845,12 +992,7 @@
           data-aos="fade-left"
         >
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15841.520970921763!2d107.8229868!3d-6.96441495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNsKwNTcnNTEuOSJTIDEwN8KwNDknMjIuNyJF!5e0!3m2!1sid!2sid!4v1710000000000!3m2!1sid!2sid"
-            class="w-full h-full border-0 grayscale opacity-80 contrast-125"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.570696710424!2d107.8753262080442!3d-6.821950966694796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68d746e91656e5%3A0x99d934b26b79360e!2sKantor%20Desa%20Sukamaju!5e0!3m2!1sid!2sid!4v1783582978962!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
         </div>
       </div>
     </section>
