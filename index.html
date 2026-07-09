@@ -6,14 +6,21 @@
     <title>Website Profil & Potensi Desa</title>
 
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-
+    <!-- icon bootsrap -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
-
+    <!-- animasi aos -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-
+    <!-- font poppins-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style/style.css" />
     <style>
       html,
       body {
@@ -24,140 +31,317 @@
       }
     </style>
   </head>
-  <body class="bg-slate-50 text-slate-800 font-sans antialiased overflow-x-hidden">
-    <nav class="fixed top-0 left-0 right-0 bg-white/90 backdrop-blur-md shadow-sm z-50 transition-all duration-300">
+  <body
+    class="font-poppins bg-slate-50 text-slate-800 font-sans antialiased overflow-x-hidden"
+  >
+    <nav
+      class="fixed top-0 left-0 right-0 bg-white/90 backdrop-blur-md shadow-sm z-50 transition-all duration-300"
+    >
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex items-center justify-between h-16">
-          <div class="flex items-center gap-2 font-bold text-xl text-emerald-600">
-             <img 
-        src="image/Sukamaju.png" 
-        alt="Logo Desa Sukamaju" 
-        class="w-8 h-8 object-contain" 
-      />
-            <span class="bg-gradient-to-r from-emerald-600 via-emerald-500 to-teal-600 bg-clip-text text-transparent">
+          <div
+            class="flex items-center gap-2 font-bold text-xl text-emerald-600"
+          >
+            <img
+              src="asset/img/logo.png"
+              alt="Logo Desa Sukamaju"
+              class="w-8 h-8 object-contain"
+            />
+            <span
+              class="bg-gradient-to-r from-emerald-600 via-emerald-500 to-teal-600 bg-clip-text text-transparent"
+            >
               Desa Sukamaju
             </span>
           </div>
 
           <div class="hidden md:flex items-center gap-6 font-medium">
-            <a href="#beranda" class="nav-link text-emerald-600 hover:text-emerald-600 transition">Beranda</a>
-            <a href="#profil" class="nav-link text-slate-600 hover:text-emerald-600 transition">Profil</a>
-            
-            <a href="#statistik" class="nav-link text-slate-600 hover:text-emerald-600 transition">Demografi</a>
-            <a href="#potensi" class="nav-link text-slate-600 hover:text-emerald-600 transition">Potensi</a>
-            <a href="#UMKM" class="nav-link text-slate-600 hover:text-emerald-600 transition">UMKM</a>
-            <a href="#kontak" class="nav-link text-slate-600 hover:text-emerald-600 transition">Kontak</a>
+            <a
+              href="#beranda"
+              class="nav-link text-emerald-600 hover:text-emerald-600 transition"
+              >Beranda</a
+            >
+            <a
+              href="#profil"
+              class="nav-link text-slate-600 hover:text-emerald-600 transition"
+              >Profil</a
+            >
+
+            <a
+              href="#statistik"
+              class="nav-link text-slate-600 hover:text-emerald-600 transition"
+              >Demografi</a
+            >
+            <a
+              href="#potensi"
+              class="nav-link text-slate-600 hover:text-emerald-600 transition"
+              >Potensi</a
+            >
+            <a
+              href="#UMKM"
+              class="nav-link text-slate-600 hover:text-emerald-600 transition"
+              >UMKM</a
+            >
+            <a
+              href="#kontak"
+              class="nav-link text-slate-600 hover:text-emerald-600 transition"
+              >Kontak</a
+            >
           </div>
 
           <div class="md:hidden">
-            <button id="menu-btn" class="text-slate-600 text-2xl focus:outline-none">
+            <button
+              id="menu-btn"
+              class="text-slate-600 text-2xl focus:outline-none"
+            >
               <i class="bi bi-list"></i>
             </button>
           </div>
         </div>
       </div>
 
-      <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-slate-100 px-4 py-4 space-y-3 shadow-inner">
-        <a href="#beranda" class="nav-link block font-medium text-emerald-600">Beranda</a>
-        <a href="#profil" class="nav-link block font-medium text-slate-600 hover:text-emerald-600">Profil</a>
-        <a href="#statistik" class="nav-link block font-medium text-slate-600 hover:text-emerald-600">Demografi</a>
-        <a href="#potensi" class="nav-link block font-medium text-slate-600 hover:text-emerald-600">Potensi & UMKM</a>
-        <a href="#kontak" class="nav-link block font-medium text-slate-600 hover:text-emerald-600">Kontak</a>
+      <div
+        id="mobile-menu"
+        class="hidden md:hidden bg-white border-t border-slate-100 px-4 py-4 space-y-3 shadow-inner"
+      >
+        <a href="#beranda" class="nav-link block font-medium text-emerald-600"
+          >Beranda</a
+        >
+        <a
+          href="#profil"
+          class="nav-link block font-medium text-slate-600 hover:text-emerald-600"
+          >Profil</a
+        >
+        <a
+          href="#statistik"
+          class="nav-link block font-medium text-slate-600 hover:text-emerald-600"
+          >Demografi</a
+        >
+        <a
+          href="#potensi"
+          class="nav-link block font-medium text-slate-600 hover:text-emerald-600"
+          >Potensi & UMKM</a
+        >
+        <a
+          href="#kontak"
+          class="nav-link block font-medium text-slate-600 hover:text-emerald-600"
+          >Kontak</a
+        >
       </div>
     </nav>
 
-    <section id="beranda" class="relative min-h-screen flex items-center justify-center bg-slate-900 pt-16 overflow-hidden">
+    <section
+      id="beranda"
+      class="relative min-h-screen flex items-center justify-center bg-slate-900 pt-16 overflow-hidden"
+    >
       <img
         src="https://images.unsplash.com/photo-1598902108854-10e335adac99?q=80&w=1920"
         alt="Pemandangan Desa"
         class="absolute inset-0 w-full h-full object-cover opacity-40"
       />
-      <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent"></div>
+      <div
+        class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent"
+      ></div>
 
-      <div class="relative max-w-4xl mx-auto px-4 text-center text-white" data-aos="fade-up" data-aos-duration="1000">
-        <span class="bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 px-4 py-1.5 rounded-full text-sm font-semibold tracking-wide uppercase mb-6 inline-block">Selamat Datang</span>
-        <h1 class="text-3xl md:text-6xl font-extrabold tracking-tight mb-4 break-words">
+      <div
+        class="relative max-w-4xl mx-auto px-4 text-center text-white"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
+        <span
+          class="bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 px-4 py-1.5 rounded-full text-sm font-semibold tracking-wide uppercase mb-6 inline-block"
+          >Selamat Datang</span
+        >
+        <h1
+          class="text-3xl md:text-6xl font-extrabold tracking-tight mb-4 break-words"
+        >
           Gerbang Digital Informasi & Potensi Desa Sukamaju
         </h1>
         <p class="text-base md:text-xl text-slate-300 mb-8 max-w-2xl mx-auto">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil repellat maxime nam blanditiis ad doloremque corporis commodi laborum tempora expedita quo cupiditate, voluptas at natus architecto. Saepe in necessitatibus quam.
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil
+          repellat maxime nam blanditiis ad doloremque corporis commodi laborum
+          tempora expedita quo cupiditate, voluptas at natus architecto. Saepe
+          in necessitatibus quam.
         </p>
-        <a href="#profil" class="inline-flex items-center gap-2 bg-gradient-to-r from-emerald-600 to-emerald-500 hover:bg-emerald-500 text-white font-semibold px-6 py-3 rounded-xl shadow-lg shadow-emerald-600/20 transition group">
+        <a
+          href="#profil"
+          class="inline-flex items-center gap-2 bg-gradient-to-r from-emerald-600 to-emerald-500 hover:bg-emerald-500 text-white font-semibold px-6 py-3 rounded-xl shadow-lg shadow-emerald-600/20 transition group"
+        >
           Jelajahi Profil Desa
           <i class="bi bi-arrow-down transition group-hover:translate-y-1"></i>
         </a>
       </div>
     </section>
 
-    <section id="profil" class="py-24 w-full overflow-hidden relative bg-slate-50">
-      <div class="absolute -top-10 -left-10 w-72 h-72 bg-emerald-200/40 rounded-full blur-3xl pointer-events-none"></div>
-      <div class="absolute bottom-10 right-10 w-96 h-96 bg-teal-100/30 rounded-full blur-3xl pointer-events-none"></div>
+    <section
+      id="profil"
+      class="py-24 w-full overflow-hidden relative bg-slate-50"
+    >
+      <div
+        class="absolute -top-10 -left-10 w-72 h-72 bg-emerald-200/40 rounded-full blur-3xl pointer-events-none"
+      ></div>
+      <div
+        class="absolute bottom-10 right-10 w-96 h-96 bg-teal-100/30 rounded-full blur-3xl pointer-events-none"
+      ></div>
 
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-12 items-center relative z-10">
+      <div
+        class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-12 items-center relative z-10"
+      >
         <div data-aos="fade-right">
-          <span class="inline-block px-3 py-1 bg-emerald-50 text-xs font-bold text-emerald-600 uppercase tracking-wider rounded-md mb-3">
+          <span
+            class="inline-block px-3 py-1 bg-emerald-50 text-xs font-bold text-emerald-600 uppercase tracking-wider rounded-md mb-3"
+          >
             Sekilas Profil
           </span>
-          <h2 class="text-3xl md:text-5xl font-extrabold tracking-tight text-slate-900 mb-6 leading-tight">
+          <h2
+            class="text-3xl md:text-5xl font-normal tracking-tight text-emerald-600 mb-6 leading-tight"
+          >
             Mengenal Lebih Dekat
-            <span class="bg-gradient-to-r from-emerald-600 via-emerald-500 to-teal-600 bg-clip-text text-transparent">
+            <span
+              class="bg-gradient-to-r from-emerald-600 font-bold via-emerald-500 to-teal-600 bg-clip-text text-transparent"
+            >
               Desa Sukamaju
             </span>
           </h2>
-          <div class="space-y-4 text-slate-600 text-base md:text-lg leading-relaxed">
-            <p>
-              lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam voluptates, quod, quia, quibusdam quos voluptatibus quas quae
-              <span class="font-semibold text-slate-800">Kecamatan Rancakalong</span>
-              lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+          <div
+            class="relative space-y-4 text-slate-600 text-base md:text-lg leading-relaxed"
+          >
+            <img
+              src="asset/img/logo.png"
+              alt="Logo Desa Sukamaju"
+              class="absolute top-15 left-1/2 transform -translate-x-1/2 mx-auto block -z-10 opacity-20 w-72 h-auto"
+            />
+            <p class="text-sm md:text-base">
+              Desa Sukamaju merupakan salah satu desa strategis yang terletak di
+              wilayah
+              <span class="font-semibold text-slate-800"
+                >Kecamatan Rancakalong</span
+              >
+              , Kabupaten Sumedang, Provinsi Jawa Barat. Dengan luas wilayah
+              mencapai 466 hektare yang terbagi menjadi dua dusun utama Dusun
+              Cisoka dan Dusun Nagrog desa ini menjadi rumah bagi sekitar 5.833
+              jiwa dari 1.631 Kepala Keluarga. Didukung oleh letak geografis
+              yang berbatasan langsung dengan Desa Guntur Mekar, Sirnamulya,
+              Sukahayu, dan Margamukti, Desa Sukamaju berkembang menjadi pusat
+              aktivitas masyarakat yang kental dengan nilai gotong royong dan
+              kebersamaan.
             </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur libero, repellendus obcaecati, sit delectus labore eligendi omnis atque vitae voluptatibus beatae minus unde quisquam. Aspernatur possimus doloribus obcaecati error facere?
+            <p class="text-sm md:text-base">
+              Di bawah kepemimpinan Lukman Hakim, desa ini membawa visi
+              "Sukamaju MAKMUR 2026" untuk mewujudkan masyarakat yang Maju,
+              Agamis, Kreatif, Mandiri, Unggul, dan Responsif. Guna mencapainya,
+              pemerintah desa fokus mengoptimalkan pembangunan infrastruktur,
+              pemberdayaan UMKM, serta pengembangan desa wisata berbasis
+              kearifan lokal. Melalui pelayanan publik yang responsif, Desa
+              Sukamaju terus bergerak maju meningkatkan kesejahteraan warga
+              tanpa kehilangan identitas budayanya.
             </p>
           </div>
         </div>
 
-        <div class="bg-white/80 backdrop-blur-md border border-slate-100 shadow-xl shadow-slate-200/60 hover:shadow-emerald-100/50 hover:-translate-y-2 transition-all duration-300 p-8 md:p-10 rounded-3xl relative overflow-hidden group" data-aos="fade-left">
-          <div class="absolute top-0 left-0 w-1 h-full bg-gradient-to-b from-emerald-500 to-teal-500 rounded-l-3xl"></div>
+        <div
+          class="bg-white/80 backdrop-blur-md border border-slate-100 shadow-xl shadow-slate-200/60 hover:shadow-emerald-100/50 hover:-translate-y-2 transition-all duration-300 p-8 md:p-10 rounded-3xl relative overflow-hidden group"
+          data-aos="fade-left"
+        >
+          <div
+            class="absolute top-0 left-0 w-1 h-full bg-gradient-to-b from-emerald-500 to-teal-500 rounded-l-3xl"
+          ></div>
           <div class="mb-8">
             <div class="flex items-center gap-3 mb-3">
-              <div class="w-10 h-10 bg-emerald-50 rounded-xl flex items-center justify-center text-emerald-600 text-lg shadow-sm">
-                <i class="bi bi-flag-fill"></i>
+              <div
+                class="w-10 h-10 bg-emerald-50 rounded-xl flex items-center justify-center text-emerald-600 text-lg shadow-sm"
+              >
+                <i class="bi bi-lightbulb"></i>
               </div>
-              <h3 class="text-xl font-extrabold text-slate-900 tracking-tight">Visi Desa</h3>
+              <h3 class="text-xl font-extrabold text-slate-900 tracking-tight">
+                Visi Desa
+              </h3>
             </div>
-            <p class="text-slate-600 italic text-lg pl-2 border-l-4 border-emerald-200/60 py-1">
-              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, ab.."
+            <p
+              class="text-slate-600 italic text-md pl-2 border-l-4 border-emerald-200/60 py-1"
+            >
+              "Terwujudnya masyarakat Sukamaju yang Maju, Agamis, Kreatif,
+              Mandiri, Unggul, dan Responsif (MAKMUR) pada tahun 2026"
             </p>
           </div>
           <hr class="border-slate-100 my-6" />
           <div>
             <div class="flex items-center gap-3 mb-5">
-              <div class="w-10 h-10 bg-emerald-50 rounded-xl flex items-center justify-center text-emerald-600 text-lg shadow-sm">
-                <i class="bi bi-list-stars"></i>
+              <div
+                class="w-10 h-10 bg-emerald-50 rounded-xl flex items-center justify-center text-emerald-600 text-lg shadow-sm"
+              >
+                <i class="bi bi-rocket-takeoff"></i>
               </div>
-              <h3 class="text-xl font-extrabold text-slate-900 tracking-tight">Misi Desa</h3>
+              <h3 class="text-xl font-extrabold text-slate-900 tracking-tight">
+                Misi Desa
+              </h3>
             </div>
             <ul class="space-y-4">
               <li class="flex gap-4 items-start">
-                <div class="relative flex-shrink-0 w-7 h-7 bg-emerald-600 text-white text-xs font-bold rounded-full flex items-center justify-center shadow-md shadow-emerald-600/20 mt-0.5">
-                  <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-500 opacity-75"></span>
+                <div
+                  class="relative flex-shrink-0 w-7 h-7 bg-emerald-600 text-white text-xs font-bold rounded-full flex items-center justify-center shadow-md shadow-emerald-600/20 mt-0.5"
+                >
+                  <span
+                    class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-500 opacity-75"
+                  ></span>
                   <span class="relative z-10">1</span>
                 </div>
-                <p class="text-slate-600 font-medium pt-0.5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, placeat.</p>
+                <p class="text-slate-600 font-medium pt-0.5">
+                  Meningkatkan kualitas dan kuantitas Inprastrusktur Desa.
+                </p>
               </li>
               <li class="flex gap-4 items-start">
-                <div class="relative flex-shrink-0 w-7 h-7 bg-emerald-600 text-white text-xs font-bold rounded-full flex items-center justify-center shadow-md shadow-emerald-600/20 mt-0.5">
-                  <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-500 opacity-75"></span>
+                <div
+                  class="relative flex-shrink-0 w-7 h-7 bg-emerald-600 text-white text-xs font-bold rounded-full flex items-center justify-center shadow-md shadow-emerald-600/20 mt-0.5"
+                >
+                  <span
+                    class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-500 opacity-75"
+                  ></span>
                   <span class="relative z-10">2</span>
                 </div>
-                <p class="text-slate-600 font-medium pt-0.5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur, assumenda?</p>
+                <p class="text-slate-600 font-medium pt-0.5">
+                  Menguatkan norma Agama dalam tatanan kehidupan sosial
+                  Masyarakat dan Pemerintahan.
+                </p>
               </li>
               <li class="flex gap-4 items-start">
-                <div class="relative flex-shrink-0 w-7 h-7 bg-emerald-600 text-white text-xs font-bold rounded-full flex items-center justify-center shadow-md shadow-emerald-600/20 mt-0.5">
-                  <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-500 opacity-75"></span>
+                <div
+                  class="relative flex-shrink-0 w-7 h-7 bg-emerald-600 text-white text-xs font-bold rounded-full flex items-center justify-center shadow-md shadow-emerald-600/20 mt-0.5"
+                >
+                  <span
+                    class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-500 opacity-75"
+                  ></span>
                   <span class="relative z-10">3</span>
                 </div>
-                <p class="text-slate-600 font-medium pt-0.5">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias, quibusdam?</p>
+                <p class="text-slate-600 font-medium pt-0.5">
+                  Mengembangkan Ekonomi Kreatif dalam upaya mengatasi kemiskinan
+                </p>
+              </li>
+              <li class="flex gap-4 items-start">
+                <div
+                  class="relative flex-shrink-0 w-7 h-7 bg-emerald-600 text-white text-xs font-bold rounded-full flex items-center justify-center shadow-md shadow-emerald-600/20 mt-0.5"
+                >
+                  <span
+                    class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-500 opacity-75"
+                  ></span>
+                  <span class="relative z-10">4</span>
+                </div>
+                <p class="text-slate-600 font-medium pt-0.5">
+                  Menguatkan SDM yang berdaya saing.
+                </p>
+              </li>
+              <li class="flex gap-4 items-start">
+                <div
+                  class="relative flex-shrink-0 w-7 h-7 bg-emerald-600 text-white text-xs font-bold rounded-full flex items-center justify-center shadow-md shadow-emerald-600/20 mt-0.5"
+                >
+                  <span
+                    class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-500 opacity-75"
+                  ></span>
+                  <span class="relative z-10">5</span>
+                </div>
+                <p class="text-slate-600 font-medium pt-0.5">
+                  Meningkatkan sarana dan prasarana yang mendukung keunggulan
+                  Budaya dan Pariwisata.
+                </p>
               </li>
             </ul>
           </div>
@@ -165,108 +349,274 @@
       </div>
     </section>
 
-    
-    <section id="statistik" class="py-24 bg-white w-full overflow-hidden border-t border-slate-100">
+    <section
+      id="statistik"
+      class="py-24 bg-white w-full overflow-hidden border-t border-slate-100"
+    >
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center mb-12">
-        <span class="text-sm font-bold text-emerald-600 uppercase tracking-wider">Demografi & Wilayah</span>
-        <h2 class="text-3xl font-bold tracking-tight text-slate-900 mt-2">
-          Statistik Desa Sukamaju
+        <div class="flex items-center justify-center gap-4 mb-5">
+          <div class="h-[1px] w-12 bg-slate-300"></div>
+          <span
+            class="text-xs font-normal text-slate-500 uppercase tracking-[0.25em]"
+          >
+            Demografi & Wilayah
+          </span>
+          <div class="h-[1px] w-12 bg-slate-300"></div>
+        </div>
+
+        <h2 class="text-2xl md:text-5xl font-normal text-emerald-600 mb-6">
+          Statistik <br class="hidden sm:block" />
+          <span
+            class="bg-gradient-to-r from-emerald-600 font-bold via-emerald-500 to-teal-600 bg-clip-text text-transparent"
+          >
+            Desa Sukamaju
+          </span>
         </h2>
         <p class="text-slate-500 max-w-md mx-auto mt-2">
           Gambaran umum kependudukan dan luas wilayah administrasi desa.
         </p>
       </div>
 
-      <div class="max-w-5xl mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-6 lg:gap-8 justify-center">
+      <div
+        class="max-w-5xl mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-6 lg:gap-8 justify-center"
+      >
         <!-- Kartu Statistik 1 -->
-        <div class="bg-white p-6 rounded-2xl shadow-xl hover:shadow-emerald-100/50 hover:-translate-y-2 transition-all duration-300 border border-slate-100 text-center" data-aos="fade-up" data-aos-delay="100">
-          <div class="w-16 h-16 bg-emerald-50 rounded-full mx-auto mb-4 flex items-center justify-center text-emerald-600 text-2xl shadow-sm">
-            <i class="bi bi-people-fill"></i>
+        <div class="" data-aos="fade-up" data-aos-delay="100">
+          <div
+            class="bg-white p-6 rounded-2xl shadow-xl hover:shadow-emerald-100/50 hover:-translate-y-2 transition-all duration-300 border border-slate-100 text-center"
+          >
+            <div
+              class="w-16 h-16 bg-emerald-50 rounded-full mx-auto mb-4 flex items-center justify-center text-emerald-600 text-2xl shadow-sm"
+            >
+              <i class="bi bi-people-fill"></i>
+            </div>
+            <h3 class="text-3xl font-extrabold text-slate-900 mb-1">
+              <span class="counter text-emerald-600" data-target="5833">0</span>
+            </h3>
+            <p
+              class="text-xs font-medium text-slate-500 uppercase tracking-wider mt-2"
+            >
+              Penduduk (Jiwa)
+            </p>
           </div>
-          <h3 class="text-3xl font-extrabold text-slate-900 mb-1">
-            <span class="counter" data-target="3450">0</span>
-          </h3>
-          <p class="text-xs font-medium text-slate-500 uppercase tracking-wider mt-2">Penduduk (Jiwa)</p>
         </div>
 
         <!-- Kartu Statistik 2 -->
-        <div class="bg-white p-6 rounded-2xl shadow-xl hover:shadow-emerald-100/50 hover:-translate-y-2 transition-all duration-300 border border-slate-100 text-center" data-aos="fade-up" data-aos-delay="200">
-          <div class="w-16 h-16 bg-emerald-50 rounded-full mx-auto mb-4 flex items-center justify-center text-emerald-600 text-2xl shadow-sm">
-            <i class="bi bi-map-fill"></i>
+        <div class="" data-aos="fade-up" data-aos-delay="100">
+          <div
+            class="bg-white p-6 rounded-2xl shadow-xl hover:shadow-emerald-100/50 hover:-translate-y-2 transition-all duration-300 border border-slate-100 text-center"
+          >
+            <div
+              class="w-16 h-16 bg-emerald-50 rounded-full mx-auto mb-4 flex items-center justify-center text-emerald-600 text-2xl shadow-sm"
+            >
+              <i class="bi bi-map-fill"></i>
+            </div>
+            <h3 class="text-3xl font-extrabold text-slate-900 mb-1">
+              <span class="counter text-emerald-600" data-target="466">0</span
+              ><span class="text-lg text-emerald-600"> Ha</span>
+            </h3>
+            <p
+              class="text-xs font-medium text-slate-500 uppercase tracking-wider mt-2"
+            >
+              Luas Wilayah
+            </p>
           </div>
-          <h3 class="text-3xl font-extrabold text-slate-900 mb-1">
-            <span class="counter" data-target="125">0</span><span class="text-lg"> Ha</span>
-          </h3>
-          <p class="text-xs font-medium text-slate-500 uppercase tracking-wider mt-2">Luas Wilayah</p>
         </div>
 
         <!-- Kartu Statistik 3 -->
-        <div class="bg-white p-6 rounded-2xl shadow-xl hover:shadow-emerald-100/50 hover:-translate-y-2 transition-all duration-300 border border-slate-100 text-center" data-aos="fade-up" data-aos-delay="300">
-          <div class="w-16 h-16 bg-emerald-50 rounded-full mx-auto mb-4 flex items-center justify-center text-emerald-600 text-2xl shadow-sm">
-            <i class="bi bi-houses-fill"></i>
+        <div class="" data-aos="fade-up" data-aos-delay="100">
+          <div
+            class="bg-white p-6 rounded-2xl shadow-xl hover:shadow-emerald-100/50 hover:-translate-y-2 transition-all duration-300 border border-slate-100 text-center"
+          >
+            <div
+              class="w-16 h-16 bg-emerald-50 rounded-full mx-auto mb-4 flex items-center justify-center text-emerald-600 text-2xl shadow-sm"
+            >
+              <i class="bi bi-houses-fill"></i>
+            </div>
+            <h3 class="text-3xl font-extrabold text-slate-900 mb-1">
+              <span class="counter text-emerald-600" data-target="29">0</span>
+              <span class="text-lg text-slate-400">/</span>
+              <span class="counter text-emerald-600" data-target="8">0</span>
+            </h3>
+            <p
+              class="text-xs font-medium text-slate-500 uppercase tracking-wider mt-2"
+            >
+              Total RT / RW
+            </p>
           </div>
-          <h3 class="text-3xl font-extrabold text-slate-900 mb-1">
-            <span class="counter" data-target="24">0</span> <span class="text-lg text-slate-400">/</span> <span class="counter" data-target="6">0</span>
-          </h3>
-          <p class="text-xs font-medium text-slate-500 uppercase tracking-wider mt-2">Total RT / RW</p>
         </div>
 
         <!-- Kartu Statistik 4 -->
-        <div class="bg-white p-6 rounded-2xl shadow-xl hover:shadow-emerald-100/50 hover:-translate-y-2 transition-all duration-300 border border-slate-100 text-center" data-aos="fade-up" data-aos-delay="400">
-          <div class="w-16 h-16 bg-emerald-50 rounded-full mx-auto mb-4 flex items-center justify-center text-emerald-600 text-2xl shadow-sm">
-            <i class="bi bi-person-workspace"></i>
+        <div class="" data-aos="fade-up" data-aos-delay="400">
+          <div
+            class="bg-white p-6 rounded-2xl shadow-xl hover:shadow-emerald-100/50 hover:-translate-y-2 transition-all duration-300 border border-slate-100 text-center"
+          >
+            <div
+              class="w-16 h-16 bg-emerald-50 rounded-full mx-auto mb-4 flex items-center justify-center text-emerald-600 text-2xl shadow-sm"
+            >
+              <i class="bi bi-person-workspace"></i>
+            </div>
+            <h3 class="text-2xl font-extrabold text-emerald-600 mb-1 mt-3">
+              Petani
+            </h3>
+            <p
+              class="text-xs font-medium text-slate-500 uppercase tracking-wider mt-2"
+            >
+              Mayoritas Profesi
+            </p>
           </div>
-          <h3 class="text-2xl font-extrabold text-slate-900 mb-1 mt-3">
-            Petani
-          </h3>
-          <p class="text-xs font-medium text-slate-500 uppercase tracking-wider mt-2">Mayoritas Profesi</p>
         </div>
       </div>
     </section>
 
-    <section id="potensi" class="py-24 bg-slate-100 w-full overflow-hidden border-t border-slate-200">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center mb-12">
-        <span class="text-sm font-bold text-emerald-600 uppercase tracking-wider">Potensi Lokal</span>
-        <h2 class="text-3xl font-bold tracking-tight text-slate-900 mt-2">
-          Fokus Pengembangan Desa Sukamaju
+    <section
+      id="potensi"
+      class="py-24 bg-slate-100 w-full overflow-hidden border-t border-slate-200 relative z-0"
+    >
+      <!-- TAMBAHAN ESTETIKA: Ambient Background Ornaments (Cahaya Halus) -->
+      <div
+        class="absolute top-0 left-0 w-96 h-96 bg-emerald-300/20 rounded-full mix-blend-multiply filter blur-[100px] opacity-70 animate-blob -z-10 pointer-events-none"
+      ></div>
+      <div
+        class="absolute bottom-0 right-0 w-96 h-96 bg-teal-300/20 rounded-full mix-blend-multiply filter blur-[100px] opacity-70 animate-blob animation-delay-2000 -z-10 pointer-events-none"
+      ></div>
+      <!-- END TAMBAHAN ESTETIKA -->
+
+      <div class="max-w-4xl mx-auto px-4 text-center mb-16 relative z-10">
+        <!-- Garis pengapit teks -->
+        <div class="flex items-center justify-center gap-4 mb-5">
+          <div class="h-[1px] w-12 bg-slate-300"></div>
+          <span
+            class="text-xs font-normal text-slate-500 uppercase tracking-[0.25em]"
+          >
+            Potensi Lokal
+          </span>
+          <div class="h-[1px] w-12 bg-slate-300"></div>
+        </div>
+
+        <h2 class="text-2xl md:text-5xl font-normal text-emerald-600 mb-6">
+          Fokus Pengembangan <br class="hidden sm:block" />
+          <span
+            class="bg-gradient-to-r from-emerald-600 font-bold via-emerald-500 to-teal-600 bg-clip-text text-transparent"
+          >
+            Desa Sukamaju
+          </span>
         </h2>
-        <p class="text-slate-500 max-w-md mx-auto mt-2">
-          Sektor unggulan yang terus digerakkan demi meningkatkan roda perekonomian warga masyarakat.
+
+        <p
+          class="text-slate-500 text-base md:text-lg max-w-xl mx-auto leading-relaxed"
+        >
+          Sektor unggulan yang terus digerakkan secara berkesinambungan demi
+          meningkatkan roda perekonomian warga.
         </p>
       </div>
 
-      <div class="max-w-5xl mx-auto px-4 grid sm:grid-cols-2 md:grid-cols-3 gap-8 justify-center">
+      <div
+        class="max-w-5xl mx-auto px-4 grid sm:grid-cols-2 md:grid-cols-3 gap-8 justify-center relative z-10"
+      >
         <!-- Kartu 1: UMKM Kreatif -->
-        <div class="bg-white p-6 rounded-2xl shadow-xl border border-slate-100 text-center hover:shadow-emerald-100/50 hover:-translate-y-2 transition-all duration-300" data-aos="fade-up" data-aos-delay="100">
-          <div class="w-24 h-24 bg-emerald-50 rounded-full mx-auto mb-4 flex items-center justify-center text-emerald-600 text-3xl">
-            <i class="bi bi-shop"></i>
+        <div class="" data-aos="fade-up" data-aos-delay="100">
+          <div
+            class="relative overflow-hidden transform bg-emerald-100/80 backdrop-blur-sm border border-white/60 hover:shadow-2xl group p-6 rounded-2xl shadow-md text-center hover:-translate-y-4 transition-all duration-300"
+          >
+            <div
+              class="absolute inset-0 bg-emerald-600 translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out -z-10"
+            ></div>
+            <div
+              class="w-24 h-24 bg-emerald-50 rounded-full mx-auto mb-4 flex items-center justify-center text-emerald-600 text-3xl group-hover:scale-110 group-hover:-rotate-6 shadow-inner transition-transform duration-500"
+            >
+              <i class="bi bi-shop"></i>
+            </div>
+            <h3
+              class="text-md font-bold text-slate-900 group-hover:text-white transition-colors duration-300"
+            >
+              UMKM & Wisata
+            </h3>
+            <div class="flex gap-0.5 py-2 justify-center">
+              <div
+                class="w-30 h-1 p-0.1 bg-red-400 group-hover:bg-white transition-colors duration-300"
+              ></div>
+              <div
+                class="w-10 h-1 p-0.1 bg-emerald-400 group-hover:bg-emerald-200 transition-colors duration-300"
+              ></div>
+            </div>
+            <p
+              class="text-xs text-slate-500 mt-2 leading-relaxed group-hover:text-emerald-50 transition-colors duration-300"
+            >
+              Pengembangan produk lokal unggulan agar mampu bersaing di pasar
+              digital dan menjangkau konsumen yang lebih luas.
+            </p>
           </div>
-          <h3 class="text-md font-bold text-slate-900">UMKM & Wisata</h3>
-          <p class="text-xs text-slate-500 mt-2 leading-relaxed">
-            Pengembangan produk lokal unggulan agar mampu bersaing di pasar digital dan menjangkau konsumen yang lebih luas.
-          </p>
         </div>
 
         <!-- Kartu 2: Pertanian -->
-        <div class="bg-white p-6 rounded-2xl shadow-xl hover:shadow-emerald-100/50 hover:-translate-y-2 transition-all duration-300 border border-slate-100 text-center" data-aos="fade-up" data-aos-delay="200">
-          <div class="w-24 h-24 bg-emerald-50 rounded-full mx-auto mb-4 flex items-center justify-center text-emerald-600 text-3xl">
-            <i class="bi bi-flower1"></i>
+        <div class="" data-aos="fade-up" data-aos-delay="100">
+          <div
+            class="relative overflow-hidden transform bg-emerald-100/80 backdrop-blur-sm border border-white/60 hover:shadow-2xl group p-6 rounded-2xl shadow-md text-center hover:-translate-y-4 transition-all duration-300"
+          >
+            <div
+              class="absolute inset-0 bg-emerald-600 translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out -z-10"
+            ></div>
+            <div
+              class="w-24 h-24 bg-emerald-50 rounded-full mx-auto mb-4 flex items-center justify-center text-emerald-600 text-3xl group-hover:scale-110 group-hover:rotate-6 shadow-inner transition-transform duration-500"
+            >
+              <i class="bi bi-flower1"></i>
+            </div>
+            <h3
+              class="text-md font-bold text-slate-900 group-hover:text-white transition-colors duration-300"
+            >
+              Pertanian & Perkebunan
+            </h3>
+            <div class="flex gap-0.5 py-2 justify-center">
+              <div
+                class="w-30 h-1 p-0.1 bg-red-400 group-hover:bg-white transition-colors duration-300"
+              ></div>
+              <div
+                class="w-10 h-1 p-0.1 bg-emerald-400 group-hover:bg-emerald-200 transition-colors duration-300"
+              ></div>
+            </div>
+            <p
+              class="text-xs text-slate-500 mt-2 leading-relaxed group-hover:text-emerald-50 transition-colors duration-300"
+            >
+              Optimalisasi hasil bumi daerah sebagai fondasi ketahanan pangan
+              dan sumber penghidupan utama masyarakat desa.
+            </p>
           </div>
-          <h3 class="text-md font-bold text-slate-900">Pertanian & Perkebunan</h3>
-          <p class="text-xs text-slate-500 mt-2 leading-relaxed">
-            Optimalisasi hasil bumi daerah sebagai fondasi ketahanan pangan dan sumber penghidupan utama masyarakat desa.
-          </p>
         </div>
 
         <!-- Kartu 3: Pelayanan Digital -->
-        <div class="bg-white p-6 rounded-2xl shadow-xl hover:shadow-emerald-100/50 hover:-translate-y-2 transition-all duration-300 border border-slate-100 text-center" data-aos="fade-up" data-aos-delay="300">
-          <div class="w-24 h-24 bg-emerald-50 rounded-full mx-auto mb-4 flex items-center justify-center text-emerald-600 text-3xl">
-            <i class="bi bi-laptop"></i>
+        <div class="" data-aos="fade-up" data-aos-delay="200">
+          <div
+            class="relative overflow-hidden transform bg-emerald-100/80 backdrop-blur-sm border border-white/60 hover:shadow-2xl group p-6 rounded-2xl shadow-md text-center hover:-translate-y-4 transition-all duration-300"
+          >
+            <div
+              class="absolute inset-0 bg-emerald-600 translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out -z-10"
+            ></div>
+            <div
+              class="w-24 h-24 bg-emerald-50 rounded-full mx-auto mb-4 flex items-center justify-center text-emerald-600 text-3xl group-hover:scale-110 group-hover:-rotate-6 shadow-inner transition-transform duration-500"
+            >
+              <i class="bi bi-laptop"></i>
+            </div>
+            <h3
+              class="text-md font-bold text-slate-900 group-hover:text-white transition-colors duration-300"
+            >
+              Digitalisasi Desa
+            </h3>
+            <div class="flex gap-0.5 py-2 justify-center">
+              <div
+                class="w-30 h-1 p-0.1 bg-red-400 group-hover:bg-white transition-colors duration-300"
+              ></div>
+              <div
+                class="w-10 h-1 p-0.1 bg-emerald-400 group-hover:bg-emerald-200 transition-colors duration-300"
+              ></div>
+            </div>
+            <p
+              class="text-xs text-slate-500 mt-2 leading-relaxed group-hover:text-emerald-50 transition-colors duration-300"
+            >
+              Pemanfaatan teknologi informasi untuk mempermudah akses informasi
+              potensi desa secara transparan dan modern.
+            </p>
           </div>
-          <h3 class="text-md font-bold text-slate-900">Digitalisasi Desa</h3>
-          <p class="text-xs text-slate-500 mt-2 leading-relaxed">
-            Pemanfaatan teknologi informasi untuk mempermudah akses informasi potensi desa secara transparan dan modern.
-          </p>
         </div>
       </div>
     </section>
@@ -274,98 +624,211 @@
     <section id="UMKM" class="py-24 w-full overflow-hidden">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-12">
-          <span class="text-sm font-bold text-emerald-600 uppercase tracking-wider">Ekonomi Lokal</span>
-          <h2 class="text-3xl font-bold tracking-tight text-slate-900 mt-2">
-            Produk Unggulan & UMKM
-            <span class="bg-gradient-to-r from-emerald-600 via-emerald-500 to-teal-600 bg-clip-text text-transparent">
+          <div class="flex items-center justify-center gap-4 mb-5">
+            <div class="h-[1px] w-12 bg-slate-300"></div>
+            <span
+              class="text-xs font-normal text-slate-500 uppercase tracking-[0.25em]"
+            >
+              Ekonomi Lokal
+            </span>
+            <div class="h-[1px] w-12 bg-slate-300"></div>
+          </div>
+
+          <h2 class="text-2xl md:text-5xl font-normal text-emerald-600 mb-6">
+            Produk Unggulan & <br class="hidden sm:block" />
+            <span
+              class="bg-gradient-to-r from-emerald-600 font-bold via-emerald-500 to-teal-600 bg-clip-text text-transparent"
+            >
               Desa Sukamaju
             </span>
           </h2>
           <p class="text-slate-500 max-w-md mx-auto mt-2">
-            Mendukung karya lokal masyarakat mandiri untuk memperkuat roda perekonomian desa.
+            Mendukung karya lokal masyarakat mandiri untuk memperkuat roda
+            perekonomian desa.
           </p>
         </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div
+            class="bg-white rounded-2xl shadow-md border border-slate-100 overflow-hidden group hover:shadow-xl transition duration-300"
+            data-aos="fade-up"
+          >
+            <img
+              src="https://i.pinimg.com/736x/23/67/06/2367067ac22f7c5ed543cb804f582fb3.jpg"
+              alt="Produk Kue / Kerajinan"
+              class="w-full h-48 object-cover group-hover:scale-105 transition duration-500 ease-out group-hover:brightness-110"
+            />
+            <div
+              class="absolute top-4 right-4 bg-white/90 backdrop-blur-md flex items-center gap-1.5 px-3 py-1 rounded-full border border-emerald-100"
+            >
+              <span class="relative flex h-2 w-2">
+                <span
+                  class="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"
+                ></span>
+                <span
+                  class="relative inline-flex rounded-full h-2 w-2 bg-red-500"
+                ></span>
+              </span>
+              <span
+                class="text-[10px] font-extrabold text-red-700 tracking-wider uppercase"
+                >Unggulan</span
+              >
+            </div>
+            <div class="p-6">
+              <p
+                class="text-xs font-medium text-gray-400 uppercase tracking-wider mb-2"
+              >
+                UMKM Unggulan
+              </p>
+              <h3 class="text-lg font-bold text-slate-900 mb-2">
+                Batik Navira
+              </h3>
+              <p class="text-sm text-slate-600 leading-relaxed mb-4">
+                Kerajinan batik tulis lokal dengan motif khas daerah. Cocok
+                untuk buah tangan.
+              </p>
 
+              <a
+                href="detail-batik.html"
+                class="inline-flex items-center gap-2 text-sm font-semibold bg-emerald-600 text-white hover:bg-emerald-500 p-2 rounded-xl transition w-full justify-center"
+              >
+                Lihat Detail Produk <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
 
-        <div class="bg-white rounded-2xl shadow-md border border-slate-100 overflow-hidden group hover:shadow-xl transition duration-300" data-aos="fade-up">
-        <img src="https://i.pinimg.com/736x/23/67/06/2367067ac22f7c5ed543cb804f582fb3.jpg" alt="Produk Kue / Kerajinan" class="w-full h-48 object-cover group-hover:scale-105 transition duration-500 ease-out group-hover:brightness-110" />
-          <div class="absolute top-4 right-4 bg-white/90 backdrop-blur-md flex items-center gap-1.5 px-3 py-1 rounded-full shadow-md shadow-emerald-200/50 border border-emerald-100">
-          <span class="relative flex h-2 w-2">
-          <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-          <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
-        </span>
-        <span class="text-[10px] font-extrabold text-emerald-700 tracking-wider uppercase">Unggulan</span>
+          <div
+            class="bg-white rounded-2xl shadow-md border border-slate-100 overflow-hidden group hover:shadow-xl transition duration-300"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <img
+              src="https://i.pinimg.com/736x/f9/00/7f/f9007f73da46783cb255a1e621637f27.jpg"
+              alt="Pizza Ala Ambu"
+              class="w-full h-48 object-cover group-hover:scale-105 transition duration-500 ease-out group-hover:brightness-110"
+            />
+
+            <div
+              class="absolute top-4 right-4 bg-white/90 backdrop-blur-md flex items-center gap-1.5 px-3 py-1 rounded-full border border-emerald-100"
+            >
+              <span class="relative flex h-2 w-2">
+                <span
+                  class="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"
+                ></span>
+                <span
+                  class="relative inline-flex rounded-full h-2 w-2 bg-red-500"
+                ></span>
+              </span>
+              <span
+                class="text-[10px] font-extrabold text-red-700 tracking-wider uppercase"
+                >Unggulan</span
+              >
+            </div>
+
+            <div class="p-6">
+              <p
+                class="text-xs font-medium text-gray-400 uppercase tracking-wider mb-2"
+              >
+                UMKM Kuliner
+              </p>
+              <h3 class="text-lg font-bold text-slate-900 mb-2">
+                Pizza Ala Ambu
+              </h3>
+              <p class="text-sm text-slate-600 leading-relaxed mb-4">
+                Sajian pizza rumahan lezat dengan topping melimpah dan harga
+                yang bersahabat untuk keluarga.
+              </p>
+
+              <!-- UBAH BAGIAN INI: Link diarahkan ke file detail-pizza.html -->
+              <a
+                href="detail-pizza.html"
+                class="inline-flex items-center gap-2 text-sm font-semibold bg-emerald-600 text-white hover:bg-emerald-500 p-2 rounded-xl transition w-full justify-center"
+              >
+                Lihat Detail Produk <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <div
+            class="bg-white rounded-2xl shadow-md border border-slate-100 overflow-hidden group hover:shadow-xl transition duration-300"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <img
+              src="https://i.pinimg.com/736x/0e/0d/a5/0e0da52ce8779a550e541809ee287fa0.jpg"
+              alt="Kuliner Desa"
+              class="w-full h-48 object-cover group-hover:scale-105 transition duration-500 ease-out group-hover:brightness-110"
+            />
+
+            <div
+              class="absolute top-4 right-4 bg-white/90 backdrop-blur-md flex items-center gap-1.5 px-3 py-1 rounded-full border border-emerald-100"
+            >
+              <span class="relative flex h-2 w-2">
+                <span
+                  class="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"
+                ></span>
+                <span
+                  class="relative inline-flex rounded-full h-2 w-2 bg-red-500"
+                ></span>
+              </span>
+              <span
+                class="text-[10px] font-extrabold text-red-700 tracking-wider uppercase"
+                >Unggulan</span
+              >
+            </div>
+
+            <div class="p-6">
+              <p
+                class="text-xs font-medium text-gray-400 uppercase tracking-wider mb-2"
+              >
+                UMKM Kuliner
+              </p>
+              <h3 class="text-lg font-bold text-slate-900 mb-2">
+                Dimsum Haji Ucu
+              </h3>
+              <p class="text-sm text-slate-600 leading-relaxed mb-4">
+                Dimsum ayam dan udang buatan rumah yang halal, lezat, dan
+                disajikan dengan saus pedas manis khas.
+              </p>
+
+              <!-- UBAH BAGIAN INI: Link diarahkan ke file detail-dimsum.html -->
+              <a
+                href="detail-dimsum.html"
+                class="inline-flex items-center gap-2 text-sm font-semibold bg-emerald-600 text-white hover:bg-emerald-500 p-2 rounded-xl transition w-full justify-center"
+              >
+                Lihat Detail Produk <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
         </div>
-        <div class="p-6">
-        <p class="text-xs font-medium text-gray-400 uppercase tracking-wider mb-2">UMKM Unggulan</p>
-        <h3 class="text-lg font-bold text-slate-900 mb-2">Batik Navira</h3>
-        <p class="text-sm text-slate-600 leading-relaxed mb-4">Kerajinan batik tulis lokal dengan motif khas daerah. Cocok untuk buah tangan.</p>
-    
-         <a href="detail-batik.html" class="inline-flex items-center gap-2 text-sm font-semibold bg-emerald-600 text-white hover:bg-emerald-500 p-2 rounded-xl transition w-full justify-center">
-           Lihat Detail Produk <i class="bi bi-arrow-right"></i>
-        </a>
       </div>
-      </div>
-
-          <div class="bg-white rounded-2xl shadow-md border border-slate-100 overflow-hidden group hover:shadow-xl transition duration-300" data-aos="fade-up" data-aos-delay="100">
-  <img src="https://i.pinimg.com/736x/f9/00/7f/f9007f73da46783cb255a1e621637f27.jpg" alt="Pizza Ala Ambu" class="w-full h-48 object-cover group-hover:scale-105 transition duration-500 ease-out group-hover:brightness-110" />
-  
-  <div class="absolute top-4 right-4 bg-white/90 backdrop-blur-md flex items-center gap-1.5 px-3 py-1 rounded-full shadow-md shadow-emerald-200/50 border border-emerald-100">
-    <span class="relative flex h-2 w-2">
-      <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-      <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
-    </span>
-    <span class="text-[10px] font-extrabold text-emerald-700 tracking-wider uppercase">Unggulan</span>
-  </div>
-  
-  <div class="p-6">
-    <p class="text-xs font-medium text-gray-400 uppercase tracking-wider mb-2">UMKM Kuliner</p>
-    <h3 class="text-lg font-bold text-slate-900 mb-2">Pizza Ala Ambu</h3>
-    <p class="text-sm text-slate-600 leading-relaxed mb-4">Sajian pizza rumahan lezat dengan topping melimpah dan harga yang bersahabat untuk keluarga.</p>
-    
-    <!-- UBAH BAGIAN INI: Link diarahkan ke file detail-pizza.html -->
-    <a href="detail-pizza.html" class="inline-flex items-center gap-2 text-sm font-semibold bg-emerald-600 text-white hover:bg-emerald-500 p-2 rounded-xl transition w-full justify-center">
-      Lihat Detail Produk <i class="bi bi-arrow-right"></i>
-    </a>
-  </div>
-</div>
-
-          <div class="bg-white rounded-2xl shadow-md border border-slate-100 overflow-hidden group hover:shadow-xl transition duration-300" data-aos="fade-up" data-aos-delay="200">
-          <img src="https://i.pinimg.com/736x/0e/0d/a5/0e0da52ce8779a550e541809ee287fa0.jpg" alt="Kuliner Desa" class="w-full h-48 object-cover group-hover:scale-105 transition duration-500 ease-out group-hover:brightness-110" />
-  
-  <div class="absolute top-4 right-4 bg-white/90 backdrop-blur-md flex items-center gap-1.5 px-3 py-1 rounded-full shadow-md shadow-emerald-200/50 border border-emerald-100">
-    <span class="relative flex h-2 w-2">
-      <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-      <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
-    </span>
-    <span class="text-[10px] font-extrabold text-emerald-700 tracking-wider uppercase">Unggulan</span>
-  </div>
-  
-  <div class="p-6">
-    <p class="text-xs font-medium text-gray-400 uppercase tracking-wider mb-2">UMKM Kuliner</p>
-    <h3 class="text-lg font-bold text-slate-900 mb-2">Dimsum Haji Ucu</h3>
-    <p class="text-sm text-slate-600 leading-relaxed mb-4">Dimsum ayam dan udang buatan rumah yang halal, lezat, dan disajikan dengan saus pedas manis khas.</p>
-    
-    <!-- UBAH BAGIAN INI: Link diarahkan ke file detail-dimsum.html -->
-    <a href="detail-dimsum.html" class="inline-flex items-center gap-2 text-sm font-semibold bg-emerald-600 text-white hover:bg-emerald-500 p-2 rounded-xl transition w-full justify-center">
-      Lihat Detail Produk <i class="bi bi-arrow-right"></i>
-    </a>
-  </div>
-</div>
     </section>
 
-    <section id="kontak" class="py-24 bg-slate-900 text-white w-full overflow-hidden">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-12">
+    <section
+      id="kontak"
+      class="py-24 bg-slate-900 text-white w-full overflow-hidden"
+    >
+      <div
+        class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-12"
+      >
         <div data-aos="fade-right">
-          <span class="text-sm font-bold text-emerald-400 uppercase tracking-wider">Sekretariat</span>
-          <h2 class="text-3xl font-bold tracking-tight text-white mt-2 mb-6">Hubungi Kantor Desa</h2>
+          <span
+            class="text-sm font-bold text-emerald-400 uppercase tracking-wider"
+            >Sekretariat</span
+          >
+          <h2 class="text-3xl font-bold tracking-tight text-white mt-2 mb-6">
+            Hubungi Kantor Desa
+          </h2>
           <p class="text-slate-400 leading-relaxed mb-6">
-            Pintu kami terbuka lebar untuk masukan, saran, kerja sama, koordinasi, maupun keperluan administrasi warga.
+            Pintu kami terbuka lebar untuk masukan, saran, kerja sama,
+            koordinasi, maupun keperluan administrasi warga.
           </p>
           <div class="space-y-4 font-medium text-slate-300">
             <div class="flex items-start gap-3">
               <i class="bi bi-geo-alt-fill text-emerald-400 text-xl mt-0.5"></i>
-              <span>Jl. Raya Utama Desa No. 12, Kec. Contoh, Kab. Sumedang, Jawa Barat</span>
+              <span
+                >Jl. Raya Utama Desa No. 12, Kec. Contoh, Kab. Sumedang, Jawa
+                Barat</span
+              >
             </div>
             <div class="flex items-center gap-3">
               <i class="bi bi-telephone-fill text-emerald-400 text-lg"></i>
@@ -377,58 +840,34 @@
             </div>
           </div>
         </div>
-        <div class="rounded-2xl overflow-hidden shadow-xl border border-slate-800 h-72 md:h-full min-h-[300px]" data-aos="fade-left">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15841.520970921763!2d107.8229868!3d-6.96441495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNsKwNTcnNTEuOSJTIDEwN8KwNDknMjIuNyJF!5e0!3m2!1sid!2sid!4v1710000000000!3m2!1sid!2sid" class="w-full h-full border-0 grayscale opacity-80 contrast-125" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div
+          class="rounded-2xl overflow-hidden shadow-xl border border-slate-800 h-72 md:h-full min-h-[300px]"
+          data-aos="fade-left"
+        >
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15841.520970921763!2d107.8229868!3d-6.96441495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNsKwNTcnNTEuOSJTIDEwN8KwNDknMjIuNyJF!5e0!3m2!1sid!2sid!4v1710000000000!3m2!1sid!2sid"
+            class="w-full h-full border-0 grayscale opacity-80 contrast-125"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
         </div>
       </div>
     </section>
 
-    <footer class="bg-slate-950 border-t border-slate-900 py-6 text-center text-sm text-slate-500">
-      <p>© 2026 Pemerintah Desa Sukamaju. Dibuat oleh Tim KKN Universitas Masoem.</p>
+    <footer
+      class="bg-slate-950 border-t border-slate-900 py-6 text-center text-sm text-slate-500"
+    >
+      <p>
+        © 2026 Pemerintah Desa Sukamaju. Dibuat oleh Tim KKN Universitas Masoem.
+      </p>
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="landing.js"></script>
-    
+
     <!-- Script Counter Angka Otomatis -->
-    <script>
-      document.addEventListener('DOMContentLoaded', function () {
-        const counters = document.querySelectorAll('.counter');
-        const speed = 100;
-
-        const startCounter = (counter) => {
-          const updateCount = () => {
-            const target = +counter.getAttribute('data-target');
-            const count = +counter.innerText;
-            const inc = target / speed;
-
-            if (count < target) {
-              counter.innerText = Math.ceil(count + inc);
-              setTimeout(updateCount, 20);
-            } else {
-              counter.innerText = target;
-            }
-          };
-          updateCount();
-        };
-
-        const observer = new IntersectionObserver(
-          (entries, observer) => {
-            entries.forEach((entry) => {
-              if (entry.isIntersecting) {
-                startCounter(entry.target);
-                observer.unobserve(entry.target);
-              }
-            });
-          },
-          { threshold: 0.5 }
-        );
-
-        counters.forEach((counter) => {
-          observer.observe(counter);
-        });
-      });
-    </script>
+    <script></script>
   </body>
 </html>

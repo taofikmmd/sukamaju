@@ -50,3 +50,41 @@ $(document).ready(function () {
     });
   });
 });
+
+// scrippt counter
+document.addEventListener("DOMContentLoaded", function () {
+  const counters = document.querySelectorAll(".counter");
+  const speed = 100;
+
+  const startCounter = (counter) => {
+    const updateCount = () => {
+      const target = +counter.getAttribute("data-target");
+      const count = +counter.innerText;
+      const inc = target / speed;
+
+      if (count < target) {
+        counter.innerText = Math.ceil(count + inc);
+        setTimeout(updateCount, 20);
+      } else {
+        counter.innerText = target;
+      }
+    };
+    updateCount();
+  };
+
+  const observer = new IntersectionObserver(
+    (entries, observer) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          startCounter(entry.target);
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.5 },
+  );
+
+  counters.forEach((counter) => {
+    observer.observe(counter);
+  });
+});
