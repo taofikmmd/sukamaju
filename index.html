@@ -131,44 +131,158 @@
 
     <section
       id="beranda"
-      class="relative min-h-screen flex items-center justify-center bg-slate-900 pt-16 overflow-hidden"
+      class="relative min-h-screen flex flex-col justify-between bg-slate-950 pt-28 pb-12 overflow-hidden"
     >
+      <!-- Background Image with Parallax-ready Scale & Opacity Adjustment -->
       <img
         src="asset/img/IMG_20260708_163837_257.jpg"
-        alt="Pemandangan Desa"
-        class="absolute inset-0 w-full h-full object-cover opacity-40"
+        alt="Pemandangan Alam Desa Sukamaju"
+        class="absolute inset-0 w-full h-full object-cover opacity-35 scale-105 transition-transform duration-[10000ms] ease-out hover:scale-100"
       />
+
+      <!-- Premium Dark Vignette Overlay -->
+      <!-- <div
+        class="absolute inset-0 bg-gradient-to-b from-slate-950/80 via-slate-950/60 to-slate-950"
+      ></div> -->
+
+      <!-- Ambient Radial Emerald Glow (Meningkatkan Estetika Visual Kedalaman) -->
       <div
-        class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent"
+        class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[350px] md:w-[600px] h-[350px] md:h-[600px] bg-emerald-500/10 rounded-full blur-[80px] md:blur-[120px] pointer-events-none"
       ></div>
 
+      <!-- Main Content Wrapper -->
       <div
-        class="relative max-w-4xl mx-auto px-4 text-center text-white"
-        data-aos="fade-up"
-        data-aos-duration="1000"
+        class="relative w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 my-auto z-10"
       >
-        <span
-          class="bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 px-4 py-1.5 rounded-full text-sm font-semibold tracking-wide uppercase mb-6 inline-block"
-          >Selamat Datang</span
+        <div
+          class="max-w-4xl mx-auto text-center"
+          data-aos="fade-up"
+          data-aos-duration="1000"
         >
-        <h1
-          class="text-3xl md:text-6xl font-extrabold tracking-tight mb-4 break-words"
+          <div
+            class="inline-flex items-center gap-2 bg-emerald-950/40 backdrop-blur-md text-emerald-400 border border-emerald-500/30 px-4 py-2 rounded-full text-xs md:text-sm font-semibold tracking-wider uppercase mb-8 shadow-[0_0_15px_rgba(16,185,129,0.1)]"
+          >
+            <span class="flex h-2 w-2 relative">
+              <span
+                class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"
+              ></span>
+              <span
+                class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"
+              ></span>
+            </span>
+            Gerbang Digital Sukamaju
+          </div>
+
+          <!-- High-Impact Typographic Heading -->
+          <h1
+            class="text-4xl sm:text-5xl md:text-7xl text-white tracking-tight mb-6 leading-tight"
+          >
+            Menjelajahi Potensi & <br class="hidden sm:block" />
+            <span
+              class="bg-gradient-to-r from-emerald-400 font-bold via-emerald-300 to-teal-400 bg-clip-text text-transparent drop-shadow-sm"
+            >
+              Kearifan Lokal Desa
+            </span>
+          </h1>
+
+          <!-- Meaningful Contextual Paragraph (Menggantikan Lorem Ipsum) -->
+          <p
+            class="text-base md:text-xl text-slate-300 mb-10 max-w-2xl mx-auto font-light leading-relaxed"
+          >
+            Menyajikan potret keasrian alam perbukitan, harmoni kehidupan
+            masyarakat, serta inovasi pelayanan publik demi mewujudkan
+            kemandirian ekonomi desa yang berkelanjutan.
+          </p>
+
+          <!-- Dual Button System (Interactive & Tactile) -->
+          <div
+            class="flex flex-col sm:flex-row items-center justify-center gap-4"
+          >
+            <!-- Primary Glow Button -->
+            <a
+              href="#profil"
+              class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white font-medium px-8 py-4 rounded-xl shadow-[0_4px_20px_rgba(16,185,129,0.3)] hover:shadow-[0_4px_25px_rgba(16,185,129,0.5)] transition-all duration-300 transform hover:-translate-y-0.5 active:translate-y-0 group"
+            >
+              <span>Jelajahi Profil Desa</span>
+              <i
+                class="bi bi-compass transition-transform duration-300 group-hover:rotate-45 text-lg"
+              ></i>
+            </a>
+
+            <!-- Secondary Blurred Outline Button -->
+            <a
+              href="#gallery"
+              class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-slate-900/40 hover:bg-slate-900/80 text-slate-100 hover:text-white font-medium px-8 py-4 rounded-xl border border-slate-700/80 hover:border-emerald-500/50 backdrop-blur-md transition-all duration-300 transform hover:-translate-y-0.5 active:translate-y-0"
+            >
+              <span>Lihat Galeri Wisata</span>
+              <i class="bi bi-images text-lg"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Stats Section (Melayang Cantik di Atas Gradasi Dasar) -->
+      <div class="relative w-full max-w-5xl mx-auto px-4 z-10 mt-8 md:mt-12">
+        <div
+          class="grid grid-cols-3 gap-3 md:gap-6 p-4 md:p-6 bg-slate-900/30 border border-slate-800/60 rounded-2xl backdrop-blur-md shadow-2xl"
         >
-          Gerbang Digital Informasi & Potensi Desa Sukamaju
-        </h1>
-        <p class="text-base md:text-xl text-slate-300 mb-8 max-w-2xl mx-auto">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil
-          repellat maxime nam blanditiis ad doloremque corporis commodi laborum
-          tempora expedita quo cupiditate, voluptas at natus architecto. Saepe
-          in necessitatibus quam.
-        </p>
-        <a
-          href="#profil"
-          class="inline-flex items-center gap-2 bg-gradient-to-r from-emerald-600 to-emerald-500 hover:bg-emerald-500 text-white font-semibold px-6 py-3 rounded-xl shadow-lg shadow-emerald-600/20 transition group"
-        >
-          Jelajahi Profil Desa
-          <i class="bi bi-arrow-down transition group-hover:translate-y-1"></i>
-        </a>
+          <!-- Stat Card 1 -->
+          <div class="text-center py-2 border-r border-slate-800/80">
+            <div
+              class="text-emerald-400 text-lg md:text-3xl font-extrabold mb-1"
+            >
+              Subur
+            </div>
+            <div
+              class="text-[10px] md:text-xs text-slate-400 font-medium tracking-wider uppercase"
+            >
+              Lahan Pertanian
+            </div>
+          </div>
+          <!-- Stat Card 2 -->
+          <div class="text-center py-2 border-r border-slate-800/80">
+            <div class="text-teal-400 text-lg md:text-3xl font-extrabold mb-1">
+              Asri
+            </div>
+            <div
+              class="text-[10px] md:text-xs text-slate-400 font-medium tracking-wider uppercase"
+            >
+              Pesona Wisata
+            </div>
+          </div>
+          <!-- Stat Card 3 -->
+          <div class="text-center py-2">
+            <div
+              class="text-emerald-400 text-lg md:text-3xl font-extrabold mb-1"
+            >
+              Kreatif
+            </div>
+            <div
+              class="text-[10px] md:text-xs text-slate-400 font-medium tracking-wider uppercase"
+            >
+              Pelaku UMKM
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Minimalist Animated Mouse Scroll Indicator -->
+      <div
+        class="relative w-full flex justify-center mt-6 z-10 pointer-events-none"
+      >
+        <div class="flex flex-col items-center gap-1.5 opacity-60">
+          <div
+            class="w-5 h-8 border-2 border-slate-400 rounded-full flex justify-center p-1"
+          >
+            <div
+              class="w-1.5 h-1.5 bg-emerald-400 rounded-full animate-bounce"
+            ></div>
+          </div>
+          <span
+            class="text-[9px] text-slate-400 font-semibold tracking-widest uppercase"
+            >Scroll</span
+          >
+        </div>
       </div>
     </section>
 
@@ -682,14 +796,20 @@
               <h3 class="text-lg font-bold text-slate-900 mb-2">
                 Batik Navira
               </h3>
-              <p class="text-sm text-slate-600 leading-relaxed mb-4">
-                Kerajinan batik tulis lokal dengan motif khas daerah. Cocok
-                untuk buah tangan.
+              <p
+                class="text-sm text-slate-600 leading-relaxed mb-4 line-clamp-3"
+              >
+                Nafira Collection Fashion & Batik merupakan perusahaan yang
+                bergerak di bidang fashion dan batik yang telah berdiri sejak
+                tahun 2010 di Sumedang. Kehadirannya menjadi salah satu wujud
+                kreativitas dalam industri fashion berbasis batik, sekaligus
+                sebagai upaya untuk memperkenalkan Batik Khas Sumedang kepada
+                masyarakat yang lebih luas serta dunia fashion.
               </p>
 
               <a
                 href="detail-batik.html"
-                class="inline-flex items-center gap-2 text-sm font-semibold bg-emerald-600 text-white hover:bg-emerald-500 p-2 rounded-xl transition w-full justify-center"
+                class="inline-flex items-center hover:-translate-y-2 transition transition duration-300 ease-in-out gap-2 text-sm font-semibold bg-emerald-600 text-white hover:bg-emerald-500 p-2 rounded-xl transition w-full justify-center"
               >
                 Lihat Detail Produk <i class="bi bi-arrow-right"></i>
               </a>
@@ -728,20 +848,32 @@
               <p
                 class="text-xs font-medium text-gray-400 uppercase tracking-wider mb-2"
               >
-                UMKM Kuliner
+                UMKM Unggulan
               </p>
               <h3 class="text-lg font-bold text-slate-900 mb-2">
                 Pizza Ala Ambu
               </h3>
-              <p class="text-sm text-slate-600 leading-relaxed mb-4">
-                Sajian pizza rumahan lezat dengan topping melimpah dan harga
-                yang bersahabat untuk keluarga.
+              <p
+                class="text-sm text-slate-600 leading-relaxed mb-4 line-clamp-3"
+              >
+                Pizza Ala Ambu merupakan destinasi kuliner di Rancakalong,
+                Sumedang, yang menawarkan pengalaman menikmati pizza dengan
+                sentuhan cita rasa lokal. Berbeda dari pizza pada umumnya,
+                berbagai pilihan topping dan bumbunya disesuaikan dengan selera
+                masyarakat Sunda sehingga menghasilkan rasa yang khas dan akrab
+                di lidah. Keunikan lainnya terletak pada proses memasaknya yang
+                masih menggunakan tungku tradisional, sehingga menghasilkan
+                aroma smokey, tekstur yang renyah, dan cita rasa yang lebih
+                autentik. Didukung suasana pedesaan yang asri serta pemandangan
+                alam Geopark Rancakalong yang indah, Pizza Ala Ambu menjadi
+                pilihan menarik bagi pengunjung yang ingin menikmati kuliner
+                unik dengan harga yang terjangkau.
               </p>
 
               <!-- UBAH BAGIAN INI: Link diarahkan ke file detail-pizza.html -->
               <a
                 href="detail-pizza.html"
-                class="inline-flex items-center gap-2 text-sm font-semibold bg-emerald-600 text-white hover:bg-emerald-500 p-2 rounded-xl transition w-full justify-center"
+                class="inline-flex items-center hover:-translate-y-2 transition transition duration-300 ease-in-out gap-2 text-sm font-semibold bg-emerald-600 text-white hover:bg-emerald-500 p-2 rounded-xl transition w-full justify-center"
               >
                 Lihat Detail Produk <i class="bi bi-arrow-right"></i>
               </a>
@@ -780,22 +912,31 @@
               <p
                 class="text-xs font-medium text-gray-400 uppercase tracking-wider mb-2"
               >
-                UMKM Kuliner
+                UMKM unggulan
               </p>
               <h3 class="text-lg font-bold text-slate-900 mb-2">
-                Dimsum Haji Ucu
+                Dimsum NOE PAK JOE
               </h3>
-              <p class="text-sm text-slate-600 leading-relaxed mb-4">
-                Dimsum ayam dan udang buatan rumah yang halal, lezat, dan
-                disajikan dengan saus pedas manis khas.
+              <p
+                class="text-sm text-slate-600 leading-relaxed mb-4 line-clamp-3"
+              >
+                Noe PakJu merupakan perusahaan yang bergerak dalam industry
+                pengolahan makanan beku. Noe PakJu berkomitmen memberikan harga
+                jual produk yang terjangkau bagi konsumen dengan menggunakan
+                bahan baku berkualitas, serta didukung oleh SDM yang kompeten
+                dibidangnya. Yang mempunyai harapan bagi seluruh kalangan
+                masyarakat dapat menikmati semua produk Noe PakJu produksi
               </p>
 
               <!-- UBAH BAGIAN INI: Link diarahkan ke file detail-dimsum.html -->
               <a
                 href="detail-dimsum.html"
-                class="inline-flex items-center gap-2 text-sm font-semibold bg-emerald-600 text-white hover:bg-emerald-500 p-2 rounded-xl transition w-full justify-center"
+                class="inline-flex items-center hover:-translate-y-2 transition transition duration-300 ease-in-out gap-2 text-sm font-semibold bg-emerald-600 text-white hover:bg-emerald-500 p-2 rounded-xl transition w-full justify-center"
               >
-                Lihat Detail Produk <i class="bi bi-arrow-right"></i>
+                Lihat Detail Produk
+                <i
+                  class="bi bi-arrow-right inline-block transition duration-300 ease-in-out hover:translate-x-3"
+                ></i>
               </a>
             </div>
           </div>
@@ -992,7 +1133,14 @@
           data-aos="fade-left"
         >
           <iframe
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.570696710424!2d107.8753262080442!3d-6.821950966694796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68d746e91656e5%3A0x99d934b26b79360e!2sKantor%20Desa%20Sukamaju!5e0!3m2!1sid!2sid!4v1783582978962!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.570696710424!2d107.8753262080442!3d-6.821950966694796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68d746e91656e5%3A0x99d934b26b79360e!2sKantor%20Desa%20Sukamaju!5e0!3m2!1sid!2sid!4v1783582978962!5m2!1sid!2sid"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="strict-origin-when-cross-origin"
+          ></iframe>
         </div>
       </div>
     </section>

@@ -8,9 +8,15 @@
     <!-- Tailwind CSS -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <!-- Bootstrap Icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
     <!-- Swiper CSS untuk Carousel -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
 
     <style>
       /* Styling khusus untuk gambar carousel */
@@ -20,12 +26,14 @@
         object-fit: cover;
       }
       /* Mengubah warna tombol navigasi menjadi Emerald/Hijau */
-      .swiper-button-next, .swiper-button-prev {
-        color: #10b981 !important; 
+      .swiper-button-next,
+      .swiper-button-prev {
+        color: #10b981 !important;
         transform: scale(0.7); /* Memperkecil ikon panah di HP */
       }
       @media (min-width: 768px) {
-        .swiper-button-next, .swiper-button-prev {
+        .swiper-button-next,
+        .swiper-button-prev {
           transform: scale(1); /* Ukuran normal panah di PC */
         }
       }
@@ -35,15 +43,19 @@
     </style>
   </head>
   <body class="bg-slate-50 text-slate-800 font-sans antialiased">
-    
     <!-- Navbar Simple -->
     <nav class="bg-white shadow-sm border-b border-slate-200 sticky top-0 z-50">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex items-center justify-between h-14 md:h-16">
-          <a href="index.html" class="text-emerald-600 font-semibold flex items-center gap-2 hover:text-emerald-500 transition text-sm md:text-base">
+          <a
+            href="index.html"
+            class="text-emerald-600 font-semibold flex items-center gap-2 hover:text-emerald-500 transition text-sm md:text-base"
+          >
             <i class="bi bi-arrow-left"></i> Kembali
           </a>
-          <div class="font-bold text-base md:text-lg text-slate-800">Detail Kuliner</div>
+          <div class="font-bold text-base md:text-lg text-slate-800">
+            Detail Kuliner
+          </div>
         </div>
       </div>
     </nav>
@@ -51,25 +63,38 @@
     <!-- Content Section -->
     <section class="py-6 md:py-12">
       <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        
-        <div class="bg-white rounded-2xl md:rounded-3xl shadow-lg border border-slate-100 p-5 md:p-10">
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10 items-start">
-            
+        <div
+          class="bg-white rounded-2xl md:rounded-3xl shadow-lg border border-slate-100 p-5 md:p-10"
+        >
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10 items-start"
+          >
             <!-- BAGIAN KIRI: CAROUSEL GAMBAR -->
             <div class="w-full relative">
-              <div class="swiper mySwiper w-full h-[250px] sm:h-[350px] md:h-[450px] overflow-hidden rounded-xl md:rounded-2xl shadow-md border border-slate-100">
+              <div
+                class="swiper mySwiper w-full h-[250px] sm:h-[350px] md:h-[450px] overflow-hidden rounded-xl md:rounded-2xl shadow-md border border-slate-100"
+              >
                 <div class="swiper-wrapper">
                   <!-- Gambar 1 (Sesuai dengan Thumbnail dari Pinterest) -->
                   <div class="swiper-slide">
-                    <img src="https://i.pinimg.com/736x/0e/0d/a5/0e0da52ce8779a550e541809ee287fa0.jpg" alt="Dimsum Haji Ucu 1" />
+                    <img
+                      src="asset/img/dimsum/1 (4).jpg"
+                      alt="Dimsum Haji Ucu 1"
+                    />
                   </div>
                   <!-- Gambar 2 (Ilustrasi Tambahan) -->
                   <div class="swiper-slide">
-                    <img src="https://images.unsplash.com/photo-1563245372-f21724e3856d?q=80&w=800" alt="Dimsum Haji Ucu 2" />
+                    <img
+                      src="asset/img/dimsum/1 (2).jpg"
+                      alt="Dimsum Haji Ucu 2"
+                    />
                   </div>
                   <!-- Gambar 3 (Ilustrasi Tambahan) -->
                   <div class="swiper-slide">
-                    <img src="https://images.unsplash.com/photo-1496116218417-1a781b1c416c?q=80&w=800" alt="Dimsum Haji Ucu 3" />
+                    <img
+                      src="asset/img/dimsum/1 (3).jpg"
+                      alt="Dimsum Haji Ucu 3"
+                    />
                   </div>
                 </div>
                 <!-- Tombol Navigasi Carousel -->
@@ -82,49 +107,74 @@
 
             <!-- BAGIAN KANAN: INFORMASI & KONTAK -->
             <div class="flex flex-col h-full justify-center mt-2 md:mt-0">
-              <span class="inline-block px-3 py-1 bg-amber-50 text-[10px] md:text-xs font-bold text-amber-600 uppercase tracking-wider rounded-md mb-3 md:mb-4 w-fit">
-                Kuliner Desa
+              <span
+                class="inline-block px-3 py-1 bg-emerald-50 text-[10px] md:text-xs font-bold text-emerald-600 uppercase tracking-wider rounded-md mb-3 md:mb-4 w-fit"
+              >
+                UMKM Unggulan
               </span>
-              <h1 class="text-2xl sm:text-3xl md:text-4xl font-extrabold tracking-tight text-slate-900 mb-3 md:mb-4">
-                Dimsum Haji Ucu
+              <h1
+                class="text-2xl sm:text-3xl md:text-4xl font-extrabold tracking-tight text-slate-900 mb-3 md:mb-4"
+              >
+                Dimsum NOE PAK JOE
               </h1>
-              
-              <p class="text-slate-600 text-sm md:text-base leading-relaxed mb-5 md:mb-6">
-                Dimsum Haji Ucu merupakan camilan sehat, lezat, dan dijamin 100% halal. Dibuat dari olahan daging ayam dan udang pilihan yang dibalut kulit dimsum lembut, disajikan hangat bersama saus sambal racikan khusus yang menggugah selera. Sangat pas untuk acara keluarga atau camilan harian.
+
+              <p
+                class="text-slate-600 text-sm md:text-base leading-relaxed mb-5 md:mb-6"
+              >
+                Noe PakJu merupakan perusahaan yang bergerak dalam industry
+                pengolahan makanan beku. Noe PakJu berkomitmen memberikan harga
+                jual produk yang terjangkau bagi konsumen dengan menggunakan
+                bahan baku berkualitas, serta didukung oleh SDM yang kompeten
+                dibidangnya. Yang mempunyai harapan bagi seluruh kalangan
+                masyarakat dapat menikmati semua produk Noe PakJu produksi
               </p>
 
-              <div class="bg-slate-50 p-4 rounded-xl border border-slate-100 mb-6 md:mb-8 space-y-3 text-sm md:text-base">
+              <div
+                class="bg-slate-50 p-4 rounded-xl border border-slate-100 mb-6 md:mb-8 space-y-3 text-sm md:text-base"
+              >
                 <div class="flex items-start md:items-center gap-3">
                   <i class="bi bi-tag-fill text-emerald-500 mt-0.5 md:mt-0"></i>
-                  <span class="text-slate-700 font-medium">Harga: Rp 15.000 / Porsi (Isi 4)</span>
+                  <span class="text-slate-700 font-medium"
+                    >Harga: Rp 15.000 / Porsi (Isi 4)</span
+                  >
                 </div>
                 <div class="flex items-start md:items-center gap-3">
-                  <i class="bi bi-geo-alt-fill text-emerald-500 mt-0.5 md:mt-0"></i>
-                  <span class="text-slate-700 font-medium">Alamat: Dusun 3, RT 02/RW 04, Desa Sukamaju</span>
+                  <i
+                    class="bi bi-geo-alt-fill text-emerald-500 mt-0.5 md:mt-0"
+                  ></i>
+                  <span class="text-slate-700 font-medium"
+                    >Alamat: Citangkalak Cisugan, Sukamaju, Kec.
+                    Rancakalong</span
+                  >
                 </div>
                 <div class="flex items-start md:items-center gap-3">
-                  <i class="bi bi-person-fill text-emerald-500 mt-0.5 md:mt-0"></i>
-                  <span class="text-slate-700 font-medium">Pemilik: Bapak Haji Ucu</span>
+                  <i
+                    class="bi bi-person-fill text-emerald-500 mt-0.5 md:mt-0"
+                  ></i>
+                  <span class="text-slate-700 font-medium"
+                    >Pemilik: Bapak Haji Ucu</span
+                  >
                 </div>
               </div>
 
               <!-- Tombol WhatsApp Penuh -->
-              <a href="https://wa.me/6281234567890?text=Halo%20Bapak%20Haji%20Ucu,%20saya%20melihat%20produk%20Dimsum%20di%20Website%20Desa.%20Saya%20ingin%20memesan%20dimsumnya." 
-                 target="_blank" 
-                 class="w-full flex items-center justify-center gap-2 md:gap-3 bg-gradient-to-r from-emerald-600 to-emerald-500 hover:from-emerald-500 hover:to-emerald-400 text-white text-base md:text-lg font-semibold py-3 md:py-4 px-6 rounded-xl shadow-lg shadow-emerald-500/30 transition-all hover:-translate-y-1 active:scale-95">
-                <i class="bi bi-whatsapp text-xl md:text-2xl"></i> Pesan via WhatsApp
+              <a
+                href="https://wa.me/6285793033330?text=Halo%20kak,%20saya%20melihat%20produk%20Dimsum%20di%20Website%20Desa.%20Saya%20ingin%20memesan%20dimsumnya."
+                target="_blank"
+                class="w-full flex items-center justify-center gap-2 md:gap-3 bg-gradient-to-r from-emerald-600 to-emerald-500 hover:from-emerald-500 hover:to-emerald-400 text-white text-base md:text-lg font-semibold py-3 md:py-4 px-6 rounded-xl shadow-lg shadow-emerald-500/30 transition-all hover:-translate-y-1 active:scale-95"
+              >
+                <i class="bi bi-whatsapp text-xl md:text-2xl"></i> Pesan via
+                WhatsApp
               </a>
             </div>
-
           </div>
         </div>
-
       </div>
     </section>
 
     <!-- Swiper JS Script -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    
+
     <!-- Inisialisasi Carousel Swiper -->
     <script>
       var swiper = new Swiper(".mySwiper", {
@@ -142,7 +192,7 @@
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
         },
-        loop: true
+        loop: true,
       });
     </script>
   </body>
