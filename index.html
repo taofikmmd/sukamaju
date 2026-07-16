@@ -290,6 +290,7 @@
       id="profil"
       class="py-24 w-full overflow-hidden relative bg-slate-50"
     >
+      <!-- Background Decorations -->
       <div
         class="absolute -top-10 -left-10 w-72 h-72 bg-emerald-200/40 rounded-full blur-3xl pointer-events-none"
       ></div>
@@ -300,9 +301,10 @@
       <div
         class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-12 items-center relative z-10"
       >
-        <div data-aos="fade-right">
+        <!-- Profil Text -->
+        <div data-aos="fade-right" class="group">
           <span
-            class="inline-block px-3 py-1 bg-emerald-50 text-xs font-bold text-emerald-600 uppercase tracking-wider rounded-md mb-3"
+            class="inline-block px-3 py-1 bg-emerald-50 text-xs font-bold text-emerald-600 uppercase tracking-wider rounded-md mb-3 border border-emerald-100 transition-colors duration-300 group-hover:bg-emerald-100"
           >
             Sekilas Profil
           </span>
@@ -310,59 +312,72 @@
             class="text-3xl md:text-5xl font-normal tracking-tight text-emerald-600 mb-6 leading-tight"
           >
             Mengenal Lebih Dekat
+            <br />
             <span
-              class="bg-gradient-to-r from-emerald-600 font-bold via-emerald-500 to-teal-600 bg-clip-text text-transparent"
+              class="bg-gradient-to-r from-emerald-600 font-bold via-emerald-500 to-teal-600 bg-clip-text text-transparent transition-all duration-500 group-hover:tracking-wider"
             >
               Desa Sukamaju
             </span>
           </h2>
+
           <div
             class="relative space-y-4 text-slate-600 text-base md:text-lg leading-relaxed"
           >
+            <!-- Logo Background (Interactive) -->
             <img
               src="asset/img/logo.png"
               alt="Logo Desa Sukamaju"
-              class="absolute top-15 left-1/2 transform -translate-x-1/2 mx-auto block -z-10 opacity-20 w-72 h-auto"
+              class="absolute top-15 left-1/2 transform -translate-x-1/2 mx-auto block -z-10 opacity-10 w-72 h-auto transition-transform duration-700 group-hover:scale-110 group-hover:opacity-20"
             />
-            <p class="text-sm md:text-base">
+
+            <p
+              class="text-sm md:text-base bg-white/40 p-4 rounded-xl backdrop-blur-sm border border-white/50 transition-all duration-300 hover:shadow-lg hover:border-emerald-100"
+            >
               Desa Sukamaju merupakan salah satu desa strategis yang terletak di
               wilayah
               <span class="font-semibold text-slate-800"
                 >Kecamatan Rancakalong</span
-              >
-              , Kabupaten Sumedang, Provinsi Jawa Barat. Dengan luas wilayah
+              >, Kabupaten Sumedang, Provinsi Jawa Barat. Dengan luas wilayah
               mencapai 466 hektare yang terbagi menjadi dua dusun utama Dusun
               Cisoka dan Dusun Nagrog desa ini menjadi rumah bagi sekitar 5.833
-              jiwa dari 1.631 Kepala Keluarga. Didukung oleh letak geografis
-              yang berbatasan langsung dengan Desa Guntur Mekar, Sirnamulya,
-              Sukahayu, dan Margamukti, Desa Sukamaju berkembang menjadi pusat
-              aktivitas masyarakat yang kental dengan nilai gotong royong dan
-              kebersamaan.
+              jiwa dari 1.631 Kepala Keluarga.
             </p>
-            <p class="text-sm md:text-base">
-              Di bawah kepemimpinan Lukman Hakim, desa ini membawa visi
-              "Sukamaju MAKMUR 2026" untuk mewujudkan masyarakat yang Maju,
-              Agamis, Kreatif, Mandiri, Unggul, dan Responsif. Guna mencapainya,
-              pemerintah desa fokus mengoptimalkan pembangunan infrastruktur,
-              pemberdayaan UMKM, serta pengembangan desa wisata berbasis
-              kearifan lokal. Melalui pelayanan publik yang responsif, Desa
-              Sukamaju terus bergerak maju meningkatkan kesejahteraan warga
-              tanpa kehilangan identitas budayanya.
+
+            <p
+              class="text-sm md:text-base p-4 rounded-xl transition-all duration-300 hover:bg-emerald-50/50"
+            >
+              Didukung oleh letak geografis yang berbatasan langsung dengan Desa
+              Guntur Mekar, Sirnamulya, Sukahayu, dan Margamukti, Desa Sukamaju
+              berkembang menjadi pusat aktivitas masyarakat yang kental dengan
+              nilai gotong royong dan kebersamaan.
             </p>
+
+            <div
+              class="p-4 border-l-4 border-emerald-500 bg-gradient-to-r from-emerald-50 to-transparent"
+            >
+              <p class="text-sm md:text-base font-medium text-slate-700">
+                Di bawah kepemimpinan Lukman Hakim, desa ini membawa visi
+                "Sukamaju MAKMUR 2026" untuk mewujudkan masyarakat yang Maju,
+                Agamis, Kreatif, Mandiri, Unggul, dan Responsif.
+              </p>
+            </div>
           </div>
         </div>
 
+        <!-- Visi & Misi Card -->
         <div
-          class="bg-white/80 backdrop-blur-md border border-slate-100 shadow-xl shadow-slate-200/60 hover:shadow-emerald-100/50 hover:-translate-y-2 transition-all duration-300 p-8 md:p-10 rounded-3xl relative overflow-hidden group"
+          class="bg-white/90 backdrop-blur-md border border-slate-100 shadow-xl shadow-slate-200/60 p-8 md:p-10 rounded-3xl relative overflow-hidden transition-all duration-500 hover:shadow-2xl hover:shadow-emerald-200/50 hover:-translate-y-2 group"
           data-aos="fade-left"
         >
           <div
-            class="absolute top-0 left-0 w-1 h-full bg-gradient-to-b from-emerald-500 to-teal-500 rounded-l-3xl"
+            class="absolute top-0 left-0 w-2 h-full bg-gradient-to-b from-emerald-500 to-teal-500"
           ></div>
+
+          <!-- Visi Section -->
           <div class="mb-8">
             <div class="flex items-center gap-3 mb-3">
               <div
-                class="w-10 h-10 bg-emerald-50 rounded-xl flex items-center justify-center text-emerald-600 text-lg shadow-sm"
+                class="w-10 h-10 bg-emerald-50 rounded-xl flex items-center justify-center text-emerald-600 text-lg shadow-sm transition-transform duration-500 group-hover:rotate-12"
               >
                 <i class="bi bi-lightbulb"></i>
               </div>
@@ -371,13 +386,16 @@
               </h3>
             </div>
             <p
-              class="text-slate-600 italic text-md pl-2 border-l-4 border-emerald-200/60 py-1"
+              class="text-slate-600 italic text-md pl-4 border-l-4 border-emerald-200 py-1 transition-colors duration-300 hover:border-emerald-500 hover:text-emerald-900"
             >
               "Terwujudnya masyarakat Sukamaju yang Maju, Agamis, Kreatif,
               Mandiri, Unggul, dan Responsif (MAKMUR) pada tahun 2026"
             </p>
           </div>
+
           <hr class="border-slate-100 my-6" />
+
+          <!-- Misi Section -->
           <div>
             <div class="flex items-center gap-3 mb-5">
               <div
@@ -389,70 +407,81 @@
                 Misi Desa
               </h3>
             </div>
+
             <ul class="space-y-4">
-              <li class="flex gap-4 items-start">
+              <!-- Item List (Interactive) -->
+              <li
+                class="flex gap-4 items-start group/item transition-all duration-300 p-2 rounded-lg hover:bg-emerald-50"
+              >
                 <div
-                  class="relative flex-shrink-0 w-7 h-7 bg-emerald-600 text-white text-xs font-bold rounded-full flex items-center justify-center shadow-md shadow-emerald-600/20 mt-0.5"
+                  class="relative flex-shrink-0 w-7 h-7 bg-emerald-600 text-white text-xs font-bold rounded-full flex items-center justify-center shadow-md shadow-emerald-600/20 mt-0.5 transition-transform duration-300 group-hover/item:scale-110"
                 >
-                  <span
-                    class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-500 opacity-75"
-                  ></span>
                   <span class="relative z-10">1</span>
                 </div>
-                <p class="text-slate-600 font-medium pt-0.5">
+                <p
+                  class="text-slate-600 font-medium pt-0.5 transition-colors duration-300 group-hover/item:text-emerald-800"
+                >
                   Meningkatkan kualitas dan kuantitas Inprastrusktur Desa.
                 </p>
               </li>
-              <li class="flex gap-4 items-start">
+
+              <li
+                class="flex gap-4 items-start group/item transition-all duration-300 p-2 rounded-lg hover:bg-emerald-50"
+              >
                 <div
-                  class="relative flex-shrink-0 w-7 h-7 bg-emerald-600 text-white text-xs font-bold rounded-full flex items-center justify-center shadow-md shadow-emerald-600/20 mt-0.5"
+                  class="relative flex-shrink-0 w-7 h-7 bg-emerald-600 text-white text-xs font-bold rounded-full flex items-center justify-center shadow-md shadow-emerald-600/20 mt-0.5 transition-transform duration-300 group-hover/item:scale-110"
                 >
-                  <span
-                    class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-500 opacity-75"
-                  ></span>
                   <span class="relative z-10">2</span>
                 </div>
-                <p class="text-slate-600 font-medium pt-0.5">
+                <p
+                  class="text-slate-600 font-medium pt-0.5 transition-colors duration-300 group-hover/item:text-emerald-800"
+                >
                   Menguatkan norma Agama dalam tatanan kehidupan sosial
                   Masyarakat dan Pemerintahan.
                 </p>
               </li>
-              <li class="flex gap-4 items-start">
+
+              <li
+                class="flex gap-4 items-start group/item transition-all duration-300 p-2 rounded-lg hover:bg-emerald-50"
+              >
                 <div
-                  class="relative flex-shrink-0 w-7 h-7 bg-emerald-600 text-white text-xs font-bold rounded-full flex items-center justify-center shadow-md shadow-emerald-600/20 mt-0.5"
+                  class="relative flex-shrink-0 w-7 h-7 bg-emerald-600 text-white text-xs font-bold rounded-full flex items-center justify-center shadow-md shadow-emerald-600/20 mt-0.5 transition-transform duration-300 group-hover/item:scale-110"
                 >
-                  <span
-                    class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-500 opacity-75"
-                  ></span>
                   <span class="relative z-10">3</span>
                 </div>
-                <p class="text-slate-600 font-medium pt-0.5">
+                <p
+                  class="text-slate-600 font-medium pt-0.5 transition-colors duration-300 group-hover/item:text-emerald-800"
+                >
                   Mengembangkan Ekonomi Kreatif dalam upaya mengatasi kemiskinan
                 </p>
               </li>
-              <li class="flex gap-4 items-start">
+
+              <li
+                class="flex gap-4 items-start group/item transition-all duration-300 p-2 rounded-lg hover:bg-emerald-50"
+              >
                 <div
-                  class="relative flex-shrink-0 w-7 h-7 bg-emerald-600 text-white text-xs font-bold rounded-full flex items-center justify-center shadow-md shadow-emerald-600/20 mt-0.5"
+                  class="relative flex-shrink-0 w-7 h-7 bg-emerald-600 text-white text-xs font-bold rounded-full flex items-center justify-center shadow-md shadow-emerald-600/20 mt-0.5 transition-transform duration-300 group-hover/item:scale-110"
                 >
-                  <span
-                    class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-500 opacity-75"
-                  ></span>
                   <span class="relative z-10">4</span>
                 </div>
-                <p class="text-slate-600 font-medium pt-0.5">
+                <p
+                  class="text-slate-600 font-medium pt-0.5 transition-colors duration-300 group-hover/item:text-emerald-800"
+                >
                   Menguatkan SDM yang berdaya saing.
                 </p>
               </li>
-              <li class="flex gap-4 items-start">
+
+              <li
+                class="flex gap-4 items-start group/item transition-all duration-300 p-2 rounded-lg hover:bg-emerald-50"
+              >
                 <div
-                  class="relative flex-shrink-0 w-7 h-7 bg-emerald-600 text-white text-xs font-bold rounded-full flex items-center justify-center shadow-md shadow-emerald-600/20 mt-0.5"
+                  class="relative flex-shrink-0 w-7 h-7 bg-emerald-600 text-white text-xs font-bold rounded-full flex items-center justify-center shadow-md shadow-emerald-600/20 mt-0.5 transition-transform duration-300 group-hover/item:scale-110"
                 >
-                  <span
-                    class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-500 opacity-75"
-                  ></span>
                   <span class="relative z-10">5</span>
                 </div>
-                <p class="text-slate-600 font-medium pt-0.5">
+                <p
+                  class="text-slate-600 font-medium pt-0.5 transition-colors duration-300 group-hover/item:text-emerald-800"
+                >
                   Meningkatkan sarana dan prasarana yang mendukung keunggulan
                   Budaya dan Pariwisata.
                 </p>
@@ -587,24 +616,20 @@
       id="potensi"
       class="py-24 bg-slate-100 w-full overflow-hidden border-t border-slate-200 relative z-0"
     >
-      <!-- TAMBAHAN ESTETIKA: Ambient Background Ornaments (Cahaya Halus) -->
       <div
         class="absolute top-0 left-0 w-96 h-96 bg-emerald-300/20 rounded-full mix-blend-multiply filter blur-[100px] opacity-70 animate-blob -z-10 pointer-events-none"
       ></div>
       <div
         class="absolute bottom-0 right-0 w-96 h-96 bg-teal-300/20 rounded-full mix-blend-multiply filter blur-[100px] opacity-70 animate-blob animation-delay-2000 -z-10 pointer-events-none"
       ></div>
-      <!-- END TAMBAHAN ESTETIKA -->
 
       <div class="max-w-4xl mx-auto px-4 text-center mb-16 relative z-10">
-        <!-- Garis pengapit teks -->
         <div class="flex items-center justify-center gap-4 mb-5">
           <div class="h-[1px] w-12 bg-slate-300"></div>
           <span
             class="text-xs font-normal text-slate-500 uppercase tracking-[0.25em]"
+            >Potensi Lokal</span
           >
-            Potensi Lokal
-          </span>
           <div class="h-[1px] w-12 bg-slate-300"></div>
         </div>
 
@@ -616,7 +641,6 @@
             Desa Sukamaju
           </span>
         </h2>
-
         <p
           class="text-slate-500 text-base md:text-lg max-w-xl mx-auto leading-relaxed"
         >
@@ -628,34 +652,37 @@
       <div
         class="max-w-5xl mx-auto px-4 grid sm:grid-cols-2 md:grid-cols-3 gap-8 justify-center relative z-10"
       >
-        <!-- Kartu 1: UMKM Kreatif -->
-        <div class="" data-aos="fade-up" data-aos-delay="100">
+        <div data-aos="fade-up" data-aos-delay="100">
           <div
-            class="relative overflow-hidden transform bg-emerald-100/80 backdrop-blur-sm border border-white/60 hover:shadow-2xl group p-6 rounded-2xl shadow-md text-center hover:-translate-y-4 transition-all duration-300"
+            class="potensi-card group relative overflow-hidden transform bg-emerald-100/80 backdrop-blur-sm border border-white/60 p-6 rounded-2xl shadow-md text-center transition-all duration-500 hover:shadow-2xl hover:-translate-y-4 data-[active=true]:shadow-2xl data-[active=true]:-translate-y-4"
           >
             <div
-              class="absolute inset-0 bg-emerald-600 translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out -z-10"
+              class="absolute inset-0 bg-emerald-600 translate-y-full transition-transform duration-500 ease-out -z-10 group-hover:translate-y-0 group-data-[active=true]:translate-y-0"
             ></div>
+
             <div
-              class="w-24 h-24 bg-emerald-50 rounded-full mx-auto mb-4 flex items-center justify-center text-emerald-600 text-3xl group-hover:scale-110 group-hover:-rotate-6 shadow-inner transition-transform duration-500"
+              class="w-24 h-24 bg-emerald-50 rounded-full mx-auto mb-4 flex items-center justify-center text-emerald-600 text-3xl shadow-inner transition-transform duration-500 group-hover:scale-110 group-hover:-rotate-6 group-data-[active=true]:scale-110 group-data-[active=true]:-rotate-6"
             >
               <i class="bi bi-shop"></i>
             </div>
+
             <h3
-              class="text-md font-bold text-slate-900 group-hover:text-white transition-colors duration-300"
+              class="text-md font-bold text-slate-900 transition-colors duration-300 group-hover:text-white group-data-[active=true]:text-white"
             >
               UMKM & Wisata
             </h3>
-            <div class="flex gap-0.5 py-2 justify-center">
+
+            <div class="flex gap-1 py-3 justify-center">
               <div
-                class="w-30 h-1 p-0.1 bg-red-400 group-hover:bg-white transition-colors duration-300"
+                class="w-8 h-[3px] rounded-full bg-red-400 transition-colors duration-300 group-hover:bg-white group-data-[active=true]:bg-white"
               ></div>
               <div
-                class="w-10 h-1 p-0.1 bg-emerald-400 group-hover:bg-emerald-200 transition-colors duration-300"
+                class="w-4 h-[3px] rounded-full bg-emerald-400 transition-colors duration-300 group-hover:bg-emerald-200 group-data-[active=true]:bg-emerald-200"
               ></div>
             </div>
+
             <p
-              class="text-xs text-slate-500 mt-2 leading-relaxed group-hover:text-emerald-50 transition-colors duration-300"
+              class="text-xs text-slate-600 mt-2 leading-relaxed transition-colors duration-300 group-hover:text-emerald-50 group-data-[active=true]:text-emerald-50"
             >
               Pengembangan produk lokal unggulan agar mampu bersaing di pasar
               digital dan menjangkau konsumen yang lebih luas.
@@ -663,34 +690,37 @@
           </div>
         </div>
 
-        <!-- Kartu 2: Pertanian -->
-        <div class="" data-aos="fade-up" data-aos-delay="100">
+        <div data-aos="fade-up" data-aos-delay="150">
           <div
-            class="relative overflow-hidden transform bg-emerald-100/80 backdrop-blur-sm border border-white/60 hover:shadow-2xl group p-6 rounded-2xl shadow-md text-center hover:-translate-y-4 transition-all duration-300"
+            class="potensi-card group relative overflow-hidden transform bg-emerald-100/80 backdrop-blur-sm border border-white/60 p-6 rounded-2xl shadow-md text-center transition-all duration-500 hover:shadow-2xl hover:-translate-y-4 data-[active=true]:shadow-2xl data-[active=true]:-translate-y-4"
           >
             <div
-              class="absolute inset-0 bg-emerald-600 translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out -z-10"
+              class="absolute inset-0 bg-emerald-600 translate-y-full transition-transform duration-500 ease-out -z-10 group-hover:translate-y-0 group-data-[active=true]:translate-y-0"
             ></div>
+
             <div
-              class="w-24 h-24 bg-emerald-50 rounded-full mx-auto mb-4 flex items-center justify-center text-emerald-600 text-3xl group-hover:scale-110 group-hover:rotate-6 shadow-inner transition-transform duration-500"
+              class="w-24 h-24 bg-emerald-50 rounded-full mx-auto mb-4 flex items-center justify-center text-emerald-600 text-3xl shadow-inner transition-transform duration-500 group-hover:scale-110 group-hover:rotate-6 group-data-[active=true]:scale-110 group-data-[active=true]:rotate-6"
             >
               <i class="bi bi-flower1"></i>
             </div>
+
             <h3
-              class="text-md font-bold text-slate-900 group-hover:text-white transition-colors duration-300"
+              class="text-md font-bold text-slate-900 transition-colors duration-300 group-hover:text-white group-data-[active=true]:text-white"
             >
               Pertanian & Perkebunan
             </h3>
-            <div class="flex gap-0.5 py-2 justify-center">
+
+            <div class="flex gap-1 py-3 justify-center">
               <div
-                class="w-30 h-1 p-0.1 bg-red-400 group-hover:bg-white transition-colors duration-300"
+                class="w-8 h-[3px] rounded-full bg-red-400 transition-colors duration-300 group-hover:bg-white group-data-[active=true]:bg-white"
               ></div>
               <div
-                class="w-10 h-1 p-0.1 bg-emerald-400 group-hover:bg-emerald-200 transition-colors duration-300"
+                class="w-4 h-[3px] rounded-full bg-emerald-400 transition-colors duration-300 group-hover:bg-emerald-200 group-data-[active=true]:bg-emerald-200"
               ></div>
             </div>
+
             <p
-              class="text-xs text-slate-500 mt-2 leading-relaxed group-hover:text-emerald-50 transition-colors duration-300"
+              class="text-xs text-slate-600 mt-2 leading-relaxed transition-colors duration-300 group-hover:text-emerald-50 group-data-[active=true]:text-emerald-50"
             >
               Optimalisasi hasil bumi daerah sebagai fondasi ketahanan pangan
               dan sumber penghidupan utama masyarakat desa.
@@ -698,34 +728,37 @@
           </div>
         </div>
 
-        <!-- Kartu 3: Pelayanan Digital -->
-        <div class="" data-aos="fade-up" data-aos-delay="200">
+        <div data-aos="fade-up" data-aos-delay="200">
           <div
-            class="relative overflow-hidden transform bg-emerald-100/80 backdrop-blur-sm border border-white/60 hover:shadow-2xl group p-6 rounded-2xl shadow-md text-center hover:-translate-y-4 transition-all duration-300"
+            class="potensi-card group relative overflow-hidden transform bg-emerald-100/80 backdrop-blur-sm border border-white/60 p-6 rounded-2xl shadow-md text-center transition-all duration-500 hover:shadow-2xl hover:-translate-y-4 data-[active=true]:shadow-2xl data-[active=true]:-translate-y-4"
           >
             <div
-              class="absolute inset-0 bg-emerald-600 translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out -z-10"
+              class="absolute inset-0 bg-emerald-600 translate-y-full transition-transform duration-500 ease-out -z-10 group-hover:translate-y-0 group-data-[active=true]:translate-y-0"
             ></div>
+
             <div
-              class="w-24 h-24 bg-emerald-50 rounded-full mx-auto mb-4 flex items-center justify-center text-emerald-600 text-3xl group-hover:scale-110 group-hover:-rotate-6 shadow-inner transition-transform duration-500"
+              class="w-24 h-24 bg-emerald-50 rounded-full mx-auto mb-4 flex items-center justify-center text-emerald-600 text-3xl shadow-inner transition-transform duration-500 group-hover:scale-110 group-hover:-rotate-6 group-data-[active=true]:scale-110 group-data-[active=true]:-rotate-6"
             >
               <i class="bi bi-laptop"></i>
             </div>
+
             <h3
-              class="text-md font-bold text-slate-900 group-hover:text-white transition-colors duration-300"
+              class="text-md font-bold text-slate-900 transition-colors duration-300 group-hover:text-white group-data-[active=true]:text-white"
             >
               Digitalisasi Desa
             </h3>
-            <div class="flex gap-0.5 py-2 justify-center">
+
+            <div class="flex gap-1 py-3 justify-center">
               <div
-                class="w-30 h-1 p-0.1 bg-red-400 group-hover:bg-white transition-colors duration-300"
+                class="w-8 h-[3px] rounded-full bg-red-400 transition-colors duration-300 group-hover:bg-white group-data-[active=true]:bg-white"
               ></div>
               <div
-                class="w-10 h-1 p-0.1 bg-emerald-400 group-hover:bg-emerald-200 transition-colors duration-300"
+                class="w-4 h-[3px] rounded-full bg-emerald-400 transition-colors duration-300 group-hover:bg-emerald-200 group-data-[active=true]:bg-emerald-200"
               ></div>
             </div>
+
             <p
-              class="text-xs text-slate-500 mt-2 leading-relaxed group-hover:text-emerald-50 transition-colors duration-300"
+              class="text-xs text-slate-600 mt-2 leading-relaxed transition-colors duration-300 group-hover:text-emerald-50 group-data-[active=true]:text-emerald-50"
             >
               Pemanfaatan teknologi informasi untuk mempermudah akses informasi
               potensi desa secara transparan dan modern.
@@ -735,207 +768,217 @@
       </div>
     </section>
 
-    <section id="UMKM" class="py-24 w-full overflow-hidden">
+    <section id="UMKM" class="py-24 w-full overflow-hidden bg-slate-50/50">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-12">
-          <div class="flex items-center justify-center gap-4 mb-5">
+        <div class="text-center mb-16">
+          <div class="flex items-center justify-center gap-4 mb-4">
             <div class="h-[1px] w-12 bg-slate-300"></div>
             <span
-              class="text-xs font-normal text-slate-500 uppercase tracking-[0.25em]"
+              class="text-xs font-semibold text-slate-500 uppercase tracking-[0.25em]"
+              >Ekonomi Lokal</span
             >
-              Ekonomi Lokal
-            </span>
             <div class="h-[1px] w-12 bg-slate-300"></div>
           </div>
-
-          <h2 class="text-2xl md:text-5xl font-normal text-emerald-600 mb-6">
-            Produk Unggulan & <br class="hidden sm:block" />
+          <h2
+            class="text-3xl md:text-4xl lg:text-5xl font-normal text-emerald-600 mb-4"
+          >
+            Produk Unggulan <br class="hidden sm:block" />
             <span
-              class="bg-gradient-to-r from-emerald-600 font-bold via-emerald-500 to-teal-600 bg-clip-text text-transparent"
+              class="bg-gradient-to-r font-bold from-emerald-600 via-emerald-500 to-teal-500 bg-clip-text text-transparent"
+              >Desa Sukamaju</span
             >
-              Desa Sukamaju
-            </span>
           </h2>
-          <p class="text-slate-500 max-w-md mx-auto mt-2">
+          <p
+            class="text-slate-500 max-w-lg mx-auto text-sm md:text-base leading-relaxed"
+          >
             Mendukung karya lokal masyarakat mandiri untuk memperkuat roda
-            perekonomian desa.
+            perekonomian desa dan memperkenalkan potensi daerah ke cakupan yang
+            lebih luas.
           </p>
         </div>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8"
+        >
           <div
-            class="bg-white rounded-2xl shadow-md border border-slate-100 overflow-hidden group hover:shadow-xl transition duration-300"
+            class="umkm-card group relative flex flex-col bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden transition-all duration-500 hover:shadow-2xl hover:border-emerald-200"
             data-aos="fade-up"
           >
-            <img
-              src="https://i.pinimg.com/736x/23/67/06/2367067ac22f7c5ed543cb804f582fb3.jpg"
-              alt="Produk Kue / Kerajinan"
-              class="w-full h-48 object-cover group-hover:scale-105 transition duration-500 ease-out group-hover:brightness-110"
-            />
-            <div
-              class="absolute top-4 right-4 bg-white/90 backdrop-blur-md flex items-center gap-1.5 px-3 py-1 rounded-full border border-emerald-100"
-            >
-              <span class="relative flex h-2 w-2">
-                <span
-                  class="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"
-                ></span>
-                <span
-                  class="relative inline-flex rounded-full h-2 w-2 bg-red-500"
-                ></span>
-              </span>
-              <span
-                class="text-[10px] font-extrabold text-red-700 tracking-wider uppercase"
-                >Unggulan</span
+            <div class="relative w-full aspect-[4/3] overflow-hidden">
+              <div
+                class="absolute top-4 right-4 z-10 bg-white/95 backdrop-blur-sm flex items-center gap-2 px-3 py-1.5 rounded-full shadow-sm"
               >
+                <span class="relative flex h-2.5 w-2.5">
+                  <span
+                    class="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"
+                  ></span>
+                  <span
+                    class="relative inline-flex rounded-full h-2.5 w-2.5 bg-red-500"
+                  ></span>
+                </span>
+                <span
+                  class="text-[10px] font-bold text-red-600 tracking-wider uppercase"
+                  >Unggulan</span
+                >
+              </div>
+              <img
+                src="https://i.pinimg.com/736x/23/67/06/2367067ac22f7c5ed543cb804f582fb3.jpg"
+                alt="Batik Navira"
+                class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-slate-900/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+              ></div>
             </div>
-            <div class="p-6">
+            <div class="flex flex-col flex-grow p-6">
               <p
-                class="text-xs font-medium text-gray-400 uppercase tracking-wider mb-2"
+                class="text-[11px] font-semibold text-emerald-600 uppercase tracking-widest mb-2"
               >
-                UMKM Unggulan
+                UMKM Kriya
               </p>
-              <h3 class="text-lg font-bold text-slate-900 mb-2">
+              <h3
+                class="text-xl font-bold text-slate-800 mb-3 group-hover:text-emerald-600 transition-colors duration-300"
+              >
                 Batik Navira
               </h3>
               <p
-                class="text-sm text-slate-600 leading-relaxed mb-4 line-clamp-3"
+                class="text-sm text-slate-500 leading-relaxed mb-6 line-clamp-3 flex-grow"
               >
                 Nafira Collection Fashion & Batik merupakan perusahaan yang
                 bergerak di bidang fashion dan batik yang telah berdiri sejak
-                tahun 2010 di Sumedang. Kehadirannya menjadi salah satu wujud
-                kreativitas dalam industri fashion berbasis batik, sekaligus
-                sebagai upaya untuk memperkenalkan Batik Khas Sumedang kepada
-                masyarakat yang lebih luas serta dunia fashion.
+                tahun 2010. Kehadirannya menjadi wujud kreativitas berbasis
+                kearifan lokal.
               </p>
-
               <a
                 href="detail-batik.html"
-                class="inline-flex items-center hover:-translate-y-2 transition transition duration-300 ease-in-out gap-2 text-sm font-semibold bg-emerald-600 text-white hover:bg-emerald-500 p-2 rounded-xl transition w-full justify-center"
-              >
-                Lihat Detail Produk <i class="bi bi-arrow-right"></i>
-              </a>
-            </div>
-          </div>
-
-          <div
-            class="bg-white rounded-2xl shadow-md border border-slate-100 overflow-hidden group hover:shadow-xl transition duration-300"
-            data-aos="fade-up"
-            data-aos-delay="100"
-          >
-            <img
-              src="https://i.pinimg.com/736x/f9/00/7f/f9007f73da46783cb255a1e621637f27.jpg"
-              alt="Pizza Ala Ambu"
-              class="w-full h-48 object-cover group-hover:scale-105 transition duration-500 ease-out group-hover:brightness-110"
-            />
-
-            <div
-              class="absolute top-4 right-4 bg-white/90 backdrop-blur-md flex items-center gap-1.5 px-3 py-1 rounded-full border border-emerald-100"
-            >
-              <span class="relative flex h-2 w-2">
-                <span
-                  class="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"
-                ></span>
-                <span
-                  class="relative inline-flex rounded-full h-2 w-2 bg-red-500"
-                ></span>
-              </span>
-              <span
-                class="text-[10px] font-extrabold text-red-700 tracking-wider uppercase"
-                >Unggulan</span
-              >
-            </div>
-
-            <div class="p-6">
-              <p
-                class="text-xs font-medium text-gray-400 uppercase tracking-wider mb-2"
-              >
-                UMKM Unggulan
-              </p>
-              <h3 class="text-lg font-bold text-slate-900 mb-2">
-                Pizza Ala Ambu
-              </h3>
-              <p
-                class="text-sm text-slate-600 leading-relaxed mb-4 line-clamp-3"
-              >
-                Pizza Ala Ambu merupakan destinasi kuliner di Rancakalong,
-                Sumedang, yang menawarkan pengalaman menikmati pizza dengan
-                sentuhan cita rasa lokal. Berbeda dari pizza pada umumnya,
-                berbagai pilihan topping dan bumbunya disesuaikan dengan selera
-                masyarakat Sunda sehingga menghasilkan rasa yang khas dan akrab
-                di lidah. Keunikan lainnya terletak pada proses memasaknya yang
-                masih menggunakan tungku tradisional, sehingga menghasilkan
-                aroma smokey, tekstur yang renyah, dan cita rasa yang lebih
-                autentik. Didukung suasana pedesaan yang asri serta pemandangan
-                alam Geopark Rancakalong yang indah, Pizza Ala Ambu menjadi
-                pilihan menarik bagi pengunjung yang ingin menikmati kuliner
-                unik dengan harga yang terjangkau.
-              </p>
-
-              <!-- UBAH BAGIAN INI: Link diarahkan ke file detail-pizza.html -->
-              <a
-                href="detail-pizza.html"
-                class="inline-flex items-center hover:-translate-y-2 transition transition duration-300 ease-in-out gap-2 text-sm font-semibold bg-emerald-600 text-white hover:bg-emerald-500 p-2 rounded-xl transition w-full justify-center"
-              >
-                Lihat Detail Produk <i class="bi bi-arrow-right"></i>
-              </a>
-            </div>
-          </div>
-
-          <div
-            class="bg-white rounded-2xl shadow-md border border-slate-100 overflow-hidden group hover:shadow-xl transition duration-300"
-            data-aos="fade-up"
-            data-aos-delay="200"
-          >
-            <img
-              src="https://i.pinimg.com/736x/0e/0d/a5/0e0da52ce8779a550e541809ee287fa0.jpg"
-              alt="Kuliner Desa"
-              class="w-full h-48 object-cover group-hover:scale-105 transition duration-500 ease-out group-hover:brightness-110"
-            />
-
-            <div
-              class="absolute top-4 right-4 bg-white/90 backdrop-blur-md flex items-center gap-1.5 px-3 py-1 rounded-full border border-emerald-100"
-            >
-              <span class="relative flex h-2 w-2">
-                <span
-                  class="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"
-                ></span>
-                <span
-                  class="relative inline-flex rounded-full h-2 w-2 bg-red-500"
-                ></span>
-              </span>
-              <span
-                class="text-[10px] font-extrabold text-red-700 tracking-wider uppercase"
-                >Unggulan</span
-              >
-            </div>
-
-            <div class="p-6">
-              <p
-                class="text-xs font-medium text-gray-400 uppercase tracking-wider mb-2"
-              >
-                UMKM unggulan
-              </p>
-              <h3 class="text-lg font-bold text-slate-900 mb-2">
-                Dimsum NOE PAK JOE
-              </h3>
-              <p
-                class="text-sm text-slate-600 leading-relaxed mb-4 line-clamp-3"
-              >
-                Noe PakJu merupakan perusahaan yang bergerak dalam industry
-                pengolahan makanan beku. Noe PakJu berkomitmen memberikan harga
-                jual produk yang terjangkau bagi konsumen dengan menggunakan
-                bahan baku berkualitas, serta didukung oleh SDM yang kompeten
-                dibidangnya. Yang mempunyai harapan bagi seluruh kalangan
-                masyarakat dapat menikmati semua produk Noe PakJu produksi
-              </p>
-
-              <!-- UBAH BAGIAN INI: Link diarahkan ke file detail-dimsum.html -->
-              <a
-                href="detail-dimsum.html"
-                class="inline-flex items-center hover:-translate-y-2 transition transition duration-300 ease-in-out gap-2 text-sm font-semibold bg-emerald-600 text-white hover:bg-emerald-500 p-2 rounded-xl transition w-full justify-center"
+                class="inline-flex items-center justify-center gap-2 w-full py-3 px-4 bg-slate-50 text-slate-700 font-semibold text-sm rounded-xl border border-slate-200 transition-all duration-300 group-hover:bg-emerald-600 group-hover:text-white group-hover:border-emerald-600 group-hover:shadow-md group-hover:shadow-emerald-200"
               >
                 Lihat Detail Produk
                 <i
-                  class="bi bi-arrow-right inline-block transition duration-300 ease-in-out hover:translate-x-3"
+                  class="bi bi-arrow-right transition-transform duration-300 group-hover:translate-x-1"
+                ></i>
+              </a>
+            </div>
+          </div>
+
+          <div
+            class="umkm-card group relative flex flex-col bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden transition-all duration-500 hover:shadow-2xl hover:border-emerald-200"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="relative w-full aspect-[4/3] overflow-hidden">
+              <div
+                class="absolute top-4 right-4 z-10 bg-white/95 backdrop-blur-sm flex items-center gap-2 px-3 py-1.5 rounded-full shadow-sm"
+              >
+                <span class="relative flex h-2.5 w-2.5">
+                  <span
+                    class="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"
+                  ></span>
+                  <span
+                    class="relative inline-flex rounded-full h-2.5 w-2.5 bg-red-500"
+                  ></span>
+                </span>
+                <span
+                  class="text-[10px] font-bold text-red-600 tracking-wider uppercase"
+                  >Unggulan</span
+                >
+              </div>
+              <img
+                src="https://i.pinimg.com/736x/f9/00/7f/f9007f73da46783cb255a1e621637f27.jpg"
+                alt="Pizza Ala Ambu"
+                class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-slate-900/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+              ></div>
+            </div>
+            <div class="flex flex-col flex-grow p-6">
+              <p
+                class="text-[11px] font-semibold text-emerald-600 uppercase tracking-widest mb-2"
+              >
+                UMKM Kuliner
+              </p>
+              <h3
+                class="text-xl font-bold text-slate-800 mb-3 group-hover:text-emerald-600 transition-colors duration-300"
+              >
+                Pizza Ala Ambu
+              </h3>
+              <p
+                class="text-sm text-slate-500 leading-relaxed mb-6 line-clamp-3 flex-grow"
+              >
+                Pizza Ala Ambu menawarkan pengalaman menikmati pizza dengan
+                sentuhan cita rasa lokal. Dipanggang menggunakan tungku
+                tradisional, menghasilkan aroma smokey, tekstur renyah, dan cita
+                rasa autentik.
+              </p>
+              <a
+                href="detail-pizza.html"
+                class="inline-flex items-center justify-center gap-2 w-full py-3 px-4 bg-slate-50 text-slate-700 font-semibold text-sm rounded-xl border border-slate-200 transition-all duration-300 group-hover:bg-emerald-600 group-hover:text-white group-hover:border-emerald-600 group-hover:shadow-md group-hover:shadow-emerald-200"
+              >
+                Lihat Detail Produk
+                <i
+                  class="bi bi-arrow-right transition-transform duration-300 group-hover:translate-x-1"
+                ></i>
+              </a>
+            </div>
+          </div>
+
+          <div
+            class="umkm-card group relative flex flex-col bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden transition-all duration-500 hover:shadow-2xl hover:border-emerald-200"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="relative w-full aspect-[4/3] overflow-hidden">
+              <div
+                class="absolute top-4 right-4 z-10 bg-white/95 backdrop-blur-sm flex items-center gap-2 px-3 py-1.5 rounded-full shadow-sm"
+              >
+                <span class="relative flex h-2.5 w-2.5">
+                  <span
+                    class="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"
+                  ></span>
+                  <span
+                    class="relative inline-flex rounded-full h-2.5 w-2.5 bg-red-500"
+                  ></span>
+                </span>
+                <span
+                  class="text-[10px] font-bold text-red-600 tracking-wider uppercase"
+                  >Unggulan</span
+                >
+              </div>
+              <img
+                src="https://i.pinimg.com/736x/0e/0d/a5/0e0da52ce8779a550e541809ee287fa0.jpg"
+                alt="Dimsum NOE PAK JOE"
+                class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-slate-900/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+              ></div>
+            </div>
+            <div class="flex flex-col flex-grow p-6">
+              <p
+                class="text-[11px] font-semibold text-emerald-600 uppercase tracking-widest mb-2"
+              >
+                UMKM Makanan Beku
+              </p>
+              <h3
+                class="text-xl font-bold text-slate-800 mb-3 group-hover:text-emerald-600 transition-colors duration-300"
+              >
+                Dimsum NOE PAK JOE
+              </h3>
+              <p
+                class="text-sm text-slate-500 leading-relaxed mb-6 line-clamp-3 flex-grow"
+              >
+                Bergerak dalam industri pengolahan makanan beku, Noe PakJu
+                berkomitmen memberikan harga terjangkau dengan bahan baku
+                berkualitas dan didukung oleh SDM yang kompeten di bidangnya.
+              </p>
+              <a
+                href="detail-dimsum.html"
+                class="inline-flex items-center justify-center gap-2 w-full py-3 px-4 bg-slate-50 text-slate-700 font-semibold text-sm rounded-xl border border-slate-200 transition-all duration-300 group-hover:bg-emerald-600 group-hover:text-white group-hover:border-emerald-600 group-hover:shadow-md group-hover:shadow-emerald-200"
+              >
+                Lihat Detail Produk
+                <i
+                  class="bi bi-arrow-right transition-transform duration-300 group-hover:translate-x-1"
                 ></i>
               </a>
             </div>
@@ -953,13 +996,13 @@
             <span
               class="text-xs font-normal text-slate-500 uppercase tracking-[0.25em]"
             >
-              Gallery Wisata & Fasilitas Desa
+              Gallery Wisata & Fasili Desa
             </span>
             <div class="h-[1px] w-12 bg-slate-300"></div>
           </div>
 
           <h2 class="text-2xl md:text-5xl font-normal text-emerald-600 mb-6">
-            Gallery Wisata <br class="hidden sm:block" />
+            Gallery <br class="hidden sm:block" />
             <span
               class="bg-gradient-to-r from-emerald-600 font-bold via-emerald-500 to-teal-600 bg-clip-text text-transparent"
             >
@@ -974,150 +1017,198 @@
 
         <!-- Gallery Grid (Responsif & Kreatif) -->
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          <!-- Item 1 (Bukit & Awan/Langit) -->
           <div
-            class="relative overflow-hidden rounded-xl shadow-lg group cursor-pointer"
+            class="gallery-item relative overflow-hidden rounded-xl shadow-lg group cursor-pointer aspect-[4/3]"
+            data-src="asset/img/lapangvoly1.jpg"
+            data-category="Fasilitas Olahraga"
+            data-title="Lapang Volly Desa Sukamaju"
+            data-desc="Lapang Volly Desa Sukamaju merupakan fasilitas olahraga yang menyediakan ruang bagi masyarakat untuk berpartisipasi dalam kegiatan olahraga, meningkatkan kesehatan, dan mempererat hubungan sosial."
           >
-            <!-- Image -->
             <img
               src="asset/img/lapangvoly1.jpg"
-              alt="Lembah Puncak Sukamaju"
-              class="w-full h-64 object-cover transform transition duration-500 group-hover:scale-110"
+              alt="Lapang Volly"
+              class="w-full h-full object-cover transform transition duration-700 group-hover:scale-110"
             />
 
-            <!-- Absolute Text Overlay (Selalu Muncul) -->
             <div
-              class="absolute inset-x-0 bottom-0 p-5 bg-gradient-to-t from-slate-950/90 via-slate-950/40 to-transparent pt-16 flex flex-col justify-end"
+              class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/20 to-transparent opacity-60 group-hover:opacity-90 transition-opacity duration-300"
+            ></div>
+
+            <div
+              class="absolute inset-x-0 bottom-0 p-5 flex flex-col justify-end transform transition-transform duration-300 translate-y-12 group-hover:translate-y-0"
             >
-              <!-- Tag Kategori -->
               <span
-                class="text-[10px] font-semibold text-emerald-400 uppercase tracking-wider mb-1"
+                class="text-[10px] font-semibold text-emerald-400 uppercase tracking-wider mb-1 block"
+                >Fasilitas Olahraga</span
               >
-                Fasilitas Olahraga
-              </span>
-              <!-- Judul -->
-              <h3 class="text-lg font-bold text-white leading-tight">
+              <h3 class="text-lg font-bold text-white leading-tight mb-2">
                 Lapang Volly Desa Sukamaju
               </h3>
-              <!-- Deskripsi Singkat -->
               <p
-                class="text-xs text-slate-200 mt-1 font-light opacity-90 line-clamp-2"
+                class="text-xs text-slate-300 font-light opacity-0 group-hover:opacity-100 transition-opacity duration-300 line-clamp-2"
               >
                 Lapang Volly Desa Sukamaju merupakan fasilitas olahraga yang
-                menyediakan ruang bagi masyarakat untuk berpartisipasi dalam
-                kegiatan olahraga, meningkatkan kesehatan, dan mempererat
-                hubungan sosial
+                menyediakan ruang bagi masyarakat...
               </p>
-              <!-- Garis aksen hijau yang melebar saat di-hover -->
               <div
                 class="h-[2px] w-0 bg-emerald-500 mt-3 transition-all duration-300 group-hover:w-12"
               ></div>
             </div>
+
+            <div
+              class="absolute top-4 right-4 bg-black/40 p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+            >
+              <svg
+                class="w-4 h-4 text-white"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"
+                ></path>
+              </svg>
+            </div>
           </div>
+
           <div
-            class="relative overflow-hidden rounded-xl shadow-lg group cursor-pointer"
+            class="gallery-item relative overflow-hidden rounded-xl shadow-lg group cursor-pointer aspect-[4/3]"
+            data-src="asset/img/hero.jpg"
+            data-category="Wisata Alam"
+            data-title="Puncak Bukit Hijau"
+            data-desc="Pesona panorama perbukitan berkabut dengan bentang langit senja yang meneduhkan pikiran."
           >
-            <!-- Image -->
             <img
               src="asset/img/hero.jpg"
-              alt="Lembah Puncak Sukamaju"
-              class="w-full h-64 object-cover transform transition duration-500 group-hover:scale-110"
+              alt="Puncak Bukit Hijau"
+              class="w-full h-full object-cover transform transition duration-700 group-hover:scale-110"
             />
-
-            <!-- Absolute Text Overlay (Selalu Muncul) -->
             <div
-              class="absolute inset-x-0 bottom-0 p-5 bg-gradient-to-t from-slate-950/90 via-slate-950/40 to-transparent pt-16 flex flex-col justify-end"
+              class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/20 to-transparent opacity-60 group-hover:opacity-90 transition-opacity duration-300"
+            ></div>
+            <div
+              class="absolute inset-x-0 bottom-0 p-5 flex flex-col justify-end transform transition-transform duration-300 translate-y-12 group-hover:translate-y-0"
             >
-              <!-- Tag Kategori -->
               <span
-                class="text-[10px] font-semibold text-emerald-400 uppercase tracking-wider mb-1"
+                class="text-[10px] font-semibold text-emerald-400 uppercase tracking-wider mb-1 block"
+                >Wisata Alam</span
               >
-                Wisata Alam
-              </span>
-              <!-- Judul -->
-              <h3 class="text-lg font-bold text-white leading-tight">
+              <h3 class="text-lg font-bold text-white leading-tight mb-2">
                 Puncak Bukit Hijau
               </h3>
-              <!-- Deskripsi Singkat -->
               <p
-                class="text-xs text-slate-200 mt-1 font-light opacity-90 line-clamp-2"
+                class="text-xs text-slate-300 font-light opacity-0 group-hover:opacity-100 transition-opacity duration-300 line-clamp-2"
               >
                 Pesona panorama perbukitan berkabut dengan bentang langit senja
                 yang meneduhkan pikiran.
               </p>
-              <!-- Garis aksen hijau yang melebar saat di-hover -->
               <div
                 class="h-[2px] w-0 bg-emerald-500 mt-3 transition-all duration-300 group-hover:w-12"
               ></div>
             </div>
+            <div
+              class="absolute top-4 right-4 bg-black/40 p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+            >
+              <svg
+                class="w-4 h-4 text-white"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"
+                ></path>
+              </svg>
+            </div>
           </div>
 
-          <!-- Item 2 (Tugu Batas Desa) -->
           <div
-            class="relative overflow-hidden rounded-xl shadow-lg group cursor-pointer"
+            class="gallery-item relative overflow-hidden rounded-xl shadow-lg group cursor-pointer aspect-[4/3]"
+            data-src="asset/img/curug.jpg"
+            data-category="Potensi Wisata"
+            data-title="Curug Pasirwangi"
+            data-desc="Wisata curug Pasirwangi adalah salah satu destinasi alam yang menakjubkan di Desa Sukamaju, Sumedang."
           >
-            <!-- Image -->
             <img
               src="asset/img/curug.jpg"
-              alt="Tugu Batas Desa Sukamaju"
-              class="w-full h-64 object-cover transform transition duration-500 group-hover:scale-110"
+              alt="Curug Pasirwangi"
+              class="w-full h-full object-cover transform transition duration-700 group-hover:scale-110"
             />
-
-            <!-- Absolute Text Overlay -->
             <div
-              class="absolute inset-x-0 bottom-0 p-5 bg-gradient-to-t from-slate-950/90 via-slate-950/40 to-transparent pt-16 flex flex-col justify-end"
+              class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/20 to-transparent opacity-60 group-hover:opacity-90 transition-opacity duration-300"
+            ></div>
+            <div
+              class="absolute inset-x-0 bottom-0 p-5 flex flex-col justify-end transform transition-transform duration-300 translate-y-12 group-hover:translate-y-0"
             >
-              <!-- Tag Kategori -->
               <span
-                class="text-[10px] font-semibold text-emerald-400 uppercase tracking-wider mb-1"
+                class="text-[10px] font-semibold text-emerald-400 uppercase tracking-wider mb-1 block"
+                >Potensi Wisata</span
               >
-                Potensi Wisata
-              </span>
-              <!-- Judul -->
-              <h3 class="text-lg font-bold text-white leading-tight">
+              <h3 class="text-lg font-bold text-white leading-tight mb-2">
                 Curug Pasirwangi
               </h3>
-              <!-- Deskripsi Singkat -->
               <p
-                class="text-xs text-slate-200 mt-1 font-light opacity-90 line-clamp-2"
+                class="text-xs text-slate-300 font-light opacity-0 group-hover:opacity-100 transition-opacity duration-300 line-clamp-2"
               >
                 Wisata curug Pasirwangi adalah salah satu destinasi alam yang
-                menakjubkan di Desa Sukamaju, Sumedang,
+                menakjubkan di Desa Sukamaju, Sumedang.
               </p>
               <div
                 class="h-[2px] w-0 bg-emerald-500 mt-3 transition-all duration-300 group-hover:w-12"
               ></div>
             </div>
+            <div
+              class="absolute top-4 right-4 bg-black/40 p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+            >
+              <svg
+                class="w-4 h-4 text-white"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"
+                ></path>
+              </svg>
+            </div>
           </div>
 
-          <!-- Item 3 (Lembah & Terasering Hijau) -->
           <div
-            class="relative overflow-hidden rounded-xl shadow-lg group cursor-pointer"
+            class="gallery-item relative overflow-hidden rounded-xl shadow-lg group cursor-pointer aspect-[4/3]"
+            data-src="asset/img/IMG_20260708_163837_257.jpg"
+            data-category="Ekowisata"
+            data-title="Terasering Sawah Asri"
+            data-desc="Bentangan sawah bertingkat hijau subur yang mencerminkan kearifan lokal agraris masyarakat setempat."
           >
-            <!-- Image -->
             <img
               src="asset/img/IMG_20260708_163837_257.jpg"
-              alt="Terasering Sawah Asri"
-              class="w-full h-64 object-cover transform transition duration-500 group-hover:scale-110"
+              alt="Terasering Sawah"
+              class="w-full h-full object-cover transform transition duration-700 group-hover:scale-110"
             />
-
-            <!-- Absolute Text Overlay -->
             <div
-              class="absolute inset-x-0 bottom-0 p-5 bg-gradient-to-t from-slate-950/90 via-slate-950/40 to-transparent pt-16 flex flex-col justify-end"
+              class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/20 to-transparent opacity-60 group-hover:opacity-90 transition-opacity duration-300"
+            ></div>
+            <div
+              class="absolute inset-x-0 bottom-0 p-5 flex flex-col justify-end transform transition-transform duration-300 translate-y-12 group-hover:translate-y-0"
             >
-              <!-- Tag Kategori -->
               <span
-                class="text-[10px] font-semibold text-emerald-400 uppercase tracking-wider mb-1"
+                class="text-[10px] font-semibold text-emerald-400 uppercase tracking-wider mb-1 block"
+                >Ekowisata</span
               >
-                Ekowisata
-              </span>
-              <!-- Judul -->
-              <h3 class="text-lg font-bold text-white leading-tight">
+              <h3 class="text-lg font-bold text-white leading-tight mb-2">
                 Terasering Sawah Asri
               </h3>
-              <!-- Deskripsi Singkat -->
               <p
-                class="text-xs text-slate-200 mt-1 font-light opacity-90 line-clamp-2"
+                class="text-xs text-slate-300 font-light opacity-0 group-hover:opacity-100 transition-opacity duration-300 line-clamp-2"
               >
                 Bentangan sawah bertingkat hijau subur yang mencerminkan
                 kearifan lokal agraris masyarakat setempat.
@@ -1125,6 +1216,73 @@
               <div
                 class="h-[2px] w-0 bg-emerald-500 mt-3 transition-all duration-300 group-hover:w-12"
               ></div>
+            </div>
+            <div
+              class="absolute top-4 right-4 bg-black/40 p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+            >
+              <svg
+                class="w-4 h-4 text-white"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"
+                ></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <div
+          id="gallery-lightbox"
+          class="fixed inset-0 z-[100] hidden bg-black/90 backdrop-blur-sm items-center justify-center p-4 sm:p-8 opacity-0 transition-opacity duration-300"
+        >
+          <button
+            id="close-lightbox"
+            class="absolute top-4 right-4 sm:top-6 sm:right-6 text-white/70 hover:text-emerald-400 transition-colors z-50"
+          >
+            <svg
+              class="w-8 h-8"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 18L18 6M6 6l12 12"
+              ></path>
+            </svg>
+          </button>
+
+          <div
+            class="relative w-full max-w-4xl flex flex-col bg-slate-900 rounded-2xl overflow-hidden shadow-2xl transform scale-95 transition-transform duration-300"
+            id="lightbox-content"
+          >
+            <img
+              id="lightbox-img"
+              src=""
+              alt="Detail Gallery"
+              class="w-full h-auto max-h-[50vh] sm:max-h-[65vh] object-cover bg-black"
+            />
+            <div class="p-5 sm:p-8">
+              <span
+                id="lightbox-category"
+                class="text-xs font-semibold text-emerald-400 uppercase tracking-wider mb-2 block"
+              ></span>
+              <h3
+                id="lightbox-title"
+                class="text-xl sm:text-2xl font-bold text-white mb-3"
+              ></h3>
+              <p
+                id="lightbox-desc"
+                class="text-sm sm:text-base text-slate-300 leading-relaxed"
+              ></p>
             </div>
           </div>
         </div>
