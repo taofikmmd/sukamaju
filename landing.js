@@ -215,4 +215,17 @@ $(document).ready(function () {
     });
   }
 });
-// statistik
+
+// Inisialisasi peta pada koordinat Kantor Desa Sukamaju
+const map = L.map("map").setView([-6.8219509, 107.8753262], 15);
+
+// Menggunakan OpenStreetMap sebagai tile server (Gratis & Open Source)
+L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+  attribution: "&copy; OpenStreetMap contributors",
+}).addTo(map);
+
+// Menambahkan Marker
+L.marker([-6.8219509, 107.8753262])
+  .addTo(map)
+  .bindPopup("Kantor Desa Sukamaju")
+  .openPopup();
