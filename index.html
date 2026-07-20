@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Website Profil & Potensi Desa</title>
+    <title>Website Profil & Potensi Desa Sukamaju</title>
 
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <!-- icon bootsrap -->
@@ -629,6 +629,7 @@
         </div>
       </div>
     </section>
+
     <section
       id="statistik"
       class="py-24 bg-white w-full overflow-hidden border-t border-slate-100"
@@ -1151,7 +1152,6 @@
             yang asri serta menenangkan jiwa.
           </p>
         </div>
-
         <!-- Gallery Grid (Responsif & Kreatif) -->
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           <div
@@ -1425,6 +1425,145 @@
         </div>
       </div>
     </section>
+    <!-- Section Kolom Opini Warga -->
+    <section id="opini" class="py-12 px-4 bg-gray-50">
+      <div class="max-w-3xl mx-auto">
+        <div class="text-center mb-8">
+          <h2 class="text-2xl font-bold text-emerald-600">
+            Kolom Aspirasi & Opini Warga
+          </h2>
+          <p class="text-sm text-gray-600 mt-2">
+            Sampaikan masukan, kritik, atau saran untuk kemajuan desa kita.
+          </p>
+        </div>
+
+        <!-- Wadah Form Embed -->
+        <div
+          class="bg-white rounded-xl shadow-md overflow-hidden p-4 md:p-6 border border-gray-100"
+        >
+          <div class="w-full overflow-hidden">
+            <!-- Tempel (Paste) kode iframe Google Forms di bawah ini -->
+            <iframe
+              src="https://docs.google.com/forms/d/e/1FAIpQLSeTbIjxidu0iIv209FyC8-IoCeTVZVNBiV7CqbJuivWSHU2rg/viewform?embedded=true"
+              width="640"
+              height="691"
+              frameborder="0"
+              marginheight="0"
+              marginwidth="0"
+              >Memuat…</iframe
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 1. Section Footer / Kontak Utama -->
+    <section
+      id="kontak-desa"
+      class="bg-gray-900 text-white py-12 px-4 sm:px-6 lg:px-8"
+    >
+      <div
+        class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center"
+      >
+        <!-- Info Kontak -->
+        <div>
+          <span
+            class="text-emerald-400 font-semibold text-sm uppercase tracking-wider"
+            >Layanan Warga</span
+          >
+          <h2 class="text-2xl sm:text-3xl font-bold mt-1 mb-4">
+            Kontak Pihak Desa (Kopo)
+          </h2>
+          <p class="text-gray-400 text-sm sm:text-base mb-6">
+            Butuh layanan administrasi atau punya pertanyaan seputar desa?
+            Silakan hubungi perangkat desa melalui jalur resmi di bawah ini.
+          </p>
+
+          <div class="space-y-3 text-sm sm:text-base text-gray-300">
+            <div class="flex items-start gap-3">
+              <i class="bi bi-geo-alt-fill text-emerald-400 text-xl mt-0.5"></i>
+              <span
+                >Jl. Raya Desa Kopo No. 12, Kec. Kutawaringin, Kab.
+                Bandung</span
+              >
+            </div>
+            <div class="flex items-center gap-3">
+              <i class="bi bi-telephone-fill text-emerald-400 text-xl"></i>
+              <a
+                href="tel:+6281234567890"
+                class="hover:text-emerald-400 transition-colors"
+                >+62 812-3456-7890 (Kantor Desa)</a
+              >
+            </div>
+            <div class="flex items-center gap-3">
+              <i class="bi bi-envelope-fill text-emerald-400 text-xl"></i>
+              <a
+                href="mailto:pemdes.kopo@email.com"
+                class="hover:text-emerald-400 transition-colors"
+                >pemdes.kopo@email.com</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Google Maps Embed -->
+        <div
+          class="w-full h-64 sm:h-80 rounded-2xl overflow-hidden shadow-lg border border-gray-800"
+        >
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15841.5!2d107.5!3d-6.9!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNsKwNTQnMDIuMCJTIDEwN8KwMzAnMDAuMCJF!5e0!3m2!1sid!2sid!4v1650000000000!5m2!1sid!2sid"
+            width="100%"
+            height="100%"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          >
+          </iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. Floating Action Button (FAB) Mengambang di Kanan Bawah -->
+    <div class="fixed bottom-6 right-6 z-50 flex flex-col items-end">
+      <!-- Pilihan Menu (Hidden secara default, dimunculkan via jQuery dengan animasi) -->
+      <div
+        id="fab-options"
+        class="flex flex-col gap-3 mb-3 opacity-0 translate-y-4 pointer-events-none transition-all duration-300 ease-out"
+      >
+        <!-- Opsi WhatsApp -->
+        <a
+          href="https://wa.me/081313838919?"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="flex items-center gap-2.5 bg-emerald-600 hover:bg-emerald-700 text-white text-xs sm:text-sm font-medium py-2.5 px-4 rounded-full shadow-lg transition-transform hover:scale-105"
+        >
+          <i class="bi bi-whatsapp text-lg"></i>
+          <span>WhatsApp Desa</span>
+        </a>
+
+        <!-- Opsi Email -->
+        <a
+          href="mailto:desasukamaju1982@gmail.com
+?subject=Pertanyaan%20Warga%20Desa"
+          class="flex items-center gap-2.5 bg-sky-600 hover:bg-sky-700 text-white text-xs sm:text-sm font-medium py-2.5 px-4 rounded-full shadow-lg transition-transform hover:scale-105"
+        >
+          <i class="bi bi-envelope-fill text-lg"></i>
+          <span>Kirim Email</span>
+        </a>
+      </div>
+
+      <!-- Tombol Utama FAB -->
+      <button
+        id="fab-main-btn"
+        class="w-14 h-14 bg-emerald-600 hover:bg-emerald-700 text-white rounded-full shadow-2xl flex items-center justify-center focus:outline-none transition-transform duration-300 hover:scale-110 active:scale-95 group"
+      >
+        <!-- Icon Utama (Berubah jadi silang/X saat aktif) -->
+        <i
+          id="fab-icon"
+          class="bi bi-chat-dots-fill text-2xl transition-transform duration-300 group-hover:rotate-12"
+        ></i>
+      </button>
+    </div>
     <section
       id="kontak"
       class="py-24 bg-slate-900 text-white w-full overflow-hidden"

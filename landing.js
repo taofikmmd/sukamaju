@@ -217,15 +217,52 @@ $(document).ready(function () {
 });
 
 // Inisialisasi peta pada koordinat Kantor Desa Sukamaju
-const map = L.map("map").setView([-6.8219509, 107.8753262], 15);
+// const map = L.map("map").setView([-6.8219509, 107.8753262], 15);
 
 // Menggunakan OpenStreetMap sebagai tile server (Gratis & Open Source)
-L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-  attribution: "&copy; OpenStreetMap contributors",
-}).addTo(map);
+// L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+//   attribution: "&copy; OpenStreetMap contributors",
+// }).addTo(map);
 
 // Menambahkan Marker
-L.marker([-6.8219509, 107.8753262])
-  .addTo(map)
-  .bindPopup("Kantor Desa Sukamaju")
-  .openPopup();
+// L.marker([-6.8219509, 107.8753262])
+//   .addTo(map)
+//   .bindPopup("Kantor Desa Sukamaju")
+//   .openPopup();
+
+$(document).ready(function () {
+  let isOpen = false;
+
+  $("#fab-main-btn").on("click", function () {
+    isOpen = !isOpen;
+
+    if (isOpen) {
+      // Munculkan opsi dengan animasi halus
+      $("#fab-options")
+        .removeClass("opacity-0 translate-y-4 pointer-events-none")
+        .addClass("opacity-100 translate-y-0 pointer-events-auto");
+
+      // Ubah icon tombol utama jadi tanda silang (X)
+      $("#fab-icon")
+        .removeClass("bi-chat-dots-fill")
+        .addClass("bi-x-lg rotate-90");
+    } else {
+      // Sembunyikan kembali opsi
+      $("#fab-options")
+        .removeClass("opacity-100 translate-y-0 pointer-events-auto")
+        .addClass("opacity-0 translate-y-4 pointer-events-none");
+
+      // Kembalikan icon tombol utama ke semula
+      $("#fab-icon")
+        .removeClass("bi-x-lg rotate-90")
+        .addClass("bi-chat-dots-fill");
+    }
+  });
+
+  // Opsional: Tutup menu jika pengguna mengklik di luar area FAB
+  $(document).on("click", function (e) {
+    if (!$(e.target).closest("#fab-main-btn, #fab-options").length && isOpen) {
+      $("#fab-main-btn").trigger("click");
+    }
+  });
+});
