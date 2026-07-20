@@ -25,23 +25,17 @@
       rel="stylesheet"
       href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
     />
-
-    <!-- Container Peta -->
-
+    <!-- swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="style/style.css" />
-    <style>
-      html,
-      body {
-        width: 100%;
-        max-width: 100%;
-        overflow-x: hidden !important;
-        position: relative;
-      }
-    </style>
   </head>
   <body
     class="font-poppins bg-slate-50 text-slate-800 font-sans antialiased overflow-x-hidden"
   >
+    <!-- ini navbar -->
     <nav
       class="fixed top-0 left-0 right-0 bg-white/90 backdrop-blur-md shadow-sm z-50 transition-all duration-300"
     >
@@ -136,14 +130,14 @@
         >
       </div>
     </nav>
-
+    <!-- beranda -->
     <section
       id="beranda"
       class="relative min-h-screen flex flex-col justify-between bg-slate-950 pt-28 pb-12 overflow-hidden"
     >
       <!-- Background Image with Parallax-ready Scale & Opacity Adjustment -->
       <img
-        src="asset/img/IMG_20260708_163837_257.jpg"
+        src="asset/img/heroutama.jpg"
         alt="Pemandangan Alam Desa Sukamaju"
         class="absolute inset-0 w-full h-full object-cover opacity-35 scale-105 transition-transform duration-[10000ms] ease-out hover:scale-100"
       />
@@ -293,7 +287,7 @@
         </div>
       </div>
     </section>
-
+    <!-- profil -->
     <section
       id="profil"
       class="py-24 w-full overflow-hidden relative bg-slate-50"
@@ -513,123 +507,7 @@
         </div>
       </div>
     </section>
-    <section>
-      <!-- Container Utama -->
-      <div class="max-w-5xl mx-auto px-4 py-16">
-        <!-- Header Section -->
-        <div class="flex items-center gap-3 mb-16 justify-center">
-          <div
-            class="w-12 h-12 bg-emerald-600 rounded-2xl flex items-center justify-center text-white text-xl shadow-lg shadow-emerald-600/30"
-          >
-            <i class="bi bi-people-fill"></i>
-          </div>
-          <h3 class="text-3xl font-extrabold text-slate-900 tracking-tight">
-            Struktur Organisasi
-          </h3>
-        </div>
-
-        <!-- Main Structure -->
-        <div class="flex flex-col items-center">
-          <!-- Kepala Desa (Leader) -->
-          <div
-            class="group relative bg-white p-2 rounded-3xl shadow-xl shadow-emerald-900/10 border border-slate-100 w-full max-w-xs text-center transition-all duration-700 ease-in-out hover:-translate-y-3 cursor-pointer"
-            data-aos="fade-up"
-          >
-            <div class="overflow-hidden rounded-2xl mb-4">
-              <img
-                src="https://ui-avatars.com/api/?name=Kepala+Desa&background=065f46&color=fff&size=400"
-                alt="Kepala Desa"
-                class="w-full h-48 object-cover transition-transform duration-700 group-hover:scale-105"
-              />
-            </div>
-            <h4 class="font-bold text-lg text-slate-900">Kepala Desa</h4>
-            <p class="text-emerald-600 font-medium text-sm mb-4">
-              Bpk. Nama Lengkap
-            </p>
-          </div>
-
-          <!-- Connector line -->
-          <div
-            class="h-12 w-px bg-gradient-to-b from-emerald-300 to-transparent"
-          ></div>
-
-          <!-- Grid Staff (Mengalir & Responsif) -->
-          <div
-            class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 w-full"
-          >
-            <!-- Card 1 -->
-            <div
-              class="staff-card group bg-white p-3 rounded-2xl shadow-lg border border-slate-100 transition-all duration-500 ease-out hover:shadow-emerald-100 hover:border-emerald-200"
-              data-aos="fade-up"
-              data-aos-delay="100"
-            >
-              <div class="overflow-hidden rounded-xl mb-3">
-                <img
-                  src="https://ui-avatars.com/api/?name=Sekretaris&background=10b981&color=fff&size=300"
-                  alt="Sekretaris"
-                  class="w-full h-40 object-cover transition-transform duration-700 group-hover:scale-110 grayscale group-hover:grayscale-0"
-                />
-              </div>
-              <div class="px-2 pb-2 text-center">
-                <h4 class="font-bold text-slate-800">Sekretaris</h4>
-                <p
-                  class="text-xs text-emerald-600 font-semibold tracking-wide uppercase"
-                >
-                  Admin
-                </p>
-              </div>
-            </div>
-
-            <!-- Card 2 -->
-            <div
-              class="staff-card group bg-white p-3 rounded-2xl shadow-lg border border-slate-100 transition-all duration-500 ease-out hover:shadow-emerald-100 hover:border-emerald-200"
-              data-aos="fade-up"
-              data-aos-delay="200"
-            >
-              <div class="overflow-hidden rounded-xl mb-3">
-                <img
-                  src="https://ui-avatars.com/api/?name=Bendahara&background=10b981&color=fff&size=300"
-                  alt="Bendahara"
-                  class="w-full h-40 object-cover transition-transform duration-700 group-hover:scale-110 grayscale group-hover:grayscale-0"
-                />
-              </div>
-              <div class="px-2 pb-2 text-center">
-                <h4 class="font-bold text-slate-800">Bendahara</h4>
-                <p
-                  class="text-xs text-emerald-600 font-semibold tracking-wide uppercase"
-                >
-                  Keuangan
-                </p>
-              </div>
-            </div>
-
-            <!-- Card 3 -->
-            <div
-              class="staff-card group bg-white p-3 rounded-2xl shadow-lg border border-slate-100 transition-all duration-500 ease-out hover:shadow-emerald-100 hover:border-emerald-200"
-              data-aos="fade-up"
-              data-aos-delay="300"
-            >
-              <div class="overflow-hidden rounded-xl mb-3">
-                <img
-                  src="https://ui-avatars.com/api/?name=Kaur+Pemerintahan&background=10b981&color=fff&size=300"
-                  alt="Kaur"
-                  class="w-full h-40 object-cover transition-transform duration-700 group-hover:scale-110 grayscale group-hover:grayscale-0"
-                />
-              </div>
-              <div class="px-2 pb-2 text-center">
-                <h4 class="font-bold text-slate-800">Kaur Pemerintahan</h4>
-                <p
-                  class="text-xs text-emerald-600 font-semibold tracking-wide uppercase"
-                >
-                  Operasional
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
+    <!-- Statistik Desa -->
     <section
       id="statistik"
       class="py-24 bg-white w-full overflow-hidden border-t border-slate-100"
@@ -749,7 +627,7 @@
         </div>
       </div>
     </section>
-
+    <!-- Potensi Desa -->
     <section
       id="potensi"
       class="py-24 bg-slate-100 w-full overflow-hidden border-t border-slate-200 relative z-0"
@@ -904,8 +782,532 @@
           </div>
         </div>
       </div>
-    </section>
+      <!-- ================= SECTION JELAJAH POTENSI (NEW PREMIUM BENTO GRID) ================= -->
+      <section
+        id="jelajah-potensi"
+        class="py-24 w-full border-t border-slate-200 relative z-10"
+      >
+        <div class="max-w-6xl mx-auto px-4">
+          <!-- Asymmetric Bento Grid Layout (12-Columns Master) -->
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-6 auto-rows-auto"
+          >
+            <!-- [ROW 1 - KIRI]: CARD WISATA DESA (Spans 7 Columns) -->
+            <div
+              class="lg:col-span-7 relative group w-full h-[420px] rounded-3xl overflow-hidden shadow-md border border-slate-200/60 bg-slate-900 transition-all duration-500 hover:shadow-2xl hover:-translate-y-1"
+              data-aos="fade-up"
+              data-aos-duration="800"
+            >
+              <img
+                src="asset/img/curug.jpg"
+                alt="Wisata Curug"
+                class="absolute inset-0 w-full h-full object-cover transform scale-100 group-hover:scale-105 transition-transform duration-700 ease-out"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent z-10"
+              ></div>
+              <div class="absolute top-6 left-6 z-20">
+                <span
+                  class="bg-teal-600/90 backdrop-blur-md text-white text-[10px] tracking-widest font-extrabold px-3 py-1.5 rounded-full uppercase shadow-sm"
+                  >Destinasi Alam</span
+                >
+              </div>
+              <div
+                class="absolute inset-x-0 bottom-0 p-6 md:p-8 z-20 flex flex-col justify-end"
+              >
+                <div
+                  class="flex items-center gap-2 text-teal-400 text-xs font-bold tracking-widest uppercase mb-1"
+                >
+                  <i class="bi bi-compass"></i> <span>Pesona Wisata</span>
+                </div>
+                <h3 class="text-2xl font-bold text-white mb-2 tracking-tight">
+                  Curug Pasirwangi
+                </h3>
+                <p
+                  class="text-slate-300 text-xs md:text-sm opacity-90 mb-4 line-clamp-2 max-w-lg"
+                >
+                  Menawarkan keindahan bentang alam air terjun alami dan udara
+                  perbukitan sejuk bernuansa eco-tourism yang asri.
+                </p>
+                <div>
+                  <button
+                    class="open-modal-btn bg-white/20 hover:bg-white text-white hover:text-slate-900 border border-white/40 px-4 py-2 rounded-xl text-xs font-semibold backdrop-blur-sm transition-all duration-300 flex items-center gap-2"
+                    data-target="#modal-wisata"
+                  >
+                    <i class="bi bi-eye"></i> Jelajahi Wisata
+                  </button>
+                </div>
+              </div>
+            </div>
 
+            <!-- [ROW 1 - KANAN]: CARD PERTANIAN (Spans 5 Columns) -->
+            <div
+              class="lg:col-span-5 relative group w-full h-[420px] rounded-3xl overflow-hidden shadow-md border border-slate-200/60 bg-slate-900 transition-all duration-500 hover:shadow-2xl hover:-translate-y-1"
+              data-aos="fade-up"
+              data-aos-duration="800"
+              data-aos-delay="100"
+            >
+              <img
+                src="asset/img/jahe.jpg"
+                alt="Pertanian"
+                class="absolute inset-0 w-full h-full object-cover transform scale-100 group-hover:scale-105 transition-transform duration-700 ease-out"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent z-10"
+              ></div>
+              <div class="absolute top-6 left-6 z-20">
+                <span
+                  class="bg-lime-600/90 backdrop-blur-md text-white text-[10px] tracking-widest font-extrabold px-3 py-1.5 rounded-full uppercase shadow-sm"
+                  >Agrikultur</span
+                >
+              </div>
+              <div
+                class="absolute inset-x-0 bottom-0 p-6 md:p-8 z-20 flex flex-col justify-end"
+              >
+                <div
+                  class="flex items-center gap-2 text-lime-400 text-xs font-bold tracking-widest uppercase mb-1"
+                >
+                  <i class="bi bi-flower1"></i> <span>Sektor Agraria</span>
+                </div>
+                <h3 class="text-2xl font-bold text-white mb-2 tracking-tight">
+                  Petani jahe menjadi unggulan Desa Sukamaju
+                </h3>
+                <p
+                  class="text-slate-300 text-xs md:text-sm opacity-90 mb-4 line-clamp-2"
+                >
+                  Tanah subur komoditas unggulan hortikultura dan hamparan sawah
+                  luas ketahanan pangan.
+                </p>
+                <div>
+                  <button
+                    class="open-modal-btn bg-white/20 hover:bg-white text-white hover:text-slate-900 border border-white/40 px-4 py-2 rounded-xl text-xs font-semibold backdrop-blur-sm transition-all duration-300 flex items-center gap-2"
+                    data-target="#modal-pertanian"
+                  >
+                    <i class="bi bi-eye"></i> Lihat Sektor Agraria
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- [ROW 2 - LEFT]: UMKM 1 - KULINER (Spans 4 Columns) -->
+            <div
+              class="lg:col-span-4 relative group w-full h-[450px] rounded-3xl overflow-hidden shadow-md border border-slate-200/60 bg-slate-900 transition-all duration-500 hover:shadow-2xl hover:-translate-y-1"
+              data-aos="fade-up"
+              data-aos-duration="800"
+              data-aos-delay="150"
+            >
+              <img
+                src="asset/img/pizza/3.jpg"
+                alt="UMKM Pizza"
+                class="absolute inset-0 w-full h-full object-cover transform scale-100 group-hover:scale-105 transition-transform duration-700 ease-out"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/50 to-transparent z-10"
+              ></div>
+              <div class="absolute top-6 left-6 z-20">
+                <span
+                  class="bg-emerald-600/90 backdrop-blur-md text-white text-[10px] tracking-widest font-extrabold px-3 py-1.5 rounded-full uppercase shadow-sm"
+                  >Kuliner</span
+                >
+              </div>
+              <div
+                class="absolute inset-x-0 bottom-0 p-6 z-20 flex flex-col justify-end"
+              >
+                <div
+                  class="flex items-center gap-2 text-emerald-400 text-xs font-bold tracking-widest uppercase mb-1"
+                >
+                  <i class="bi bi-shop"></i> <span>UMKM Unggulan 01</span>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-2 tracking-tight">
+                  Pizza Ala Ambu
+                </h3>
+                <p class="text-slate-300 text-xs opacity-90 mb-5 line-clamp-2">
+                  Olahan kuliner modern berskala rumahan dengan cita rasa lokal
+                  premium harga merakyat.
+                </p>
+                <div class="flex gap-2">
+                  <button
+                    class="open-modal-btn flex-1 bg-white/20 hover:bg-white text-white hover:text-slate-900 border border-white/40 py-2 rounded-xl text-xs font-semibold backdrop-blur-sm transition-all duration-300 flex items-center justify-center gap-1.5"
+                    data-target="#modal-umkm-1"
+                  >
+                    <i class="bi bi-info-circle"></i> Artikel
+                  </button>
+                  <a
+                    href="#UMKM"
+                    class="flex-1 bg-emerald-600 hover:bg-emerald-500 text-white py-2 rounded-xl text-xs font-semibold transition-all duration-300 flex items-center justify-center gap-1.5 shadow-lg shadow-emerald-950/20"
+                  >
+                    <i class="bi bi-bag"></i> Lihat Produk
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- [ROW 2 - CENTER]: UMKM 2 - KERAJINAN (Spans 4 Columns) -->
+            <div
+              class="lg:col-span-4 relative group w-full h-[450px] rounded-3xl overflow-hidden shadow-md border border-slate-200/60 bg-slate-900 transition-all duration-500 hover:shadow-2xl hover:-translate-y-1"
+              data-aos="fade-up"
+              data-aos-duration="800"
+              data-aos-delay="200"
+            >
+              <img
+                src="asset/img/batik/2.jpg"
+                alt="UMKM Kerajinan"
+                class="absolute inset-0 w-full h-full object-cover transform scale-100 group-hover:scale-105 transition-transform duration-700 ease-out"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/50 to-transparent z-10"
+              ></div>
+              <div class="absolute top-6 left-6 z-20">
+                <span
+                  class="bg-emerald-600/90 backdrop-blur-md text-white text-[10px] tracking-widest font-extrabold px-3 py-1.5 rounded-full uppercase shadow-sm"
+                  >Kerajinan</span
+                >
+              </div>
+              <div
+                class="absolute inset-x-0 bottom-0 p-6 z-20 flex flex-col justify-end"
+              >
+                <div
+                  class="flex items-center gap-2 text-emerald-400 text-xs font-bold tracking-widest uppercase mb-1"
+                >
+                  <i class="bi bi-shop"></i> <span>UMKM Unggulan 02</span>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-2 tracking-tight">
+                  Batik Navira
+                </h3>
+                <p class="text-slate-300 text-xs opacity-90 mb-5 line-clamp-2">
+                  Kerajinan kain batik otentik bermotif khas flora-fauna lokal
+                  buatan tangan pengrajin ibu-ibu PKK.
+                </p>
+                <div class="flex gap-2">
+                  <button
+                    class="open-modal-btn flex-1 bg-white/20 hover:bg-white text-white hover:text-slate-900 border border-white/40 py-2 rounded-xl text-xs font-semibold backdrop-blur-sm transition-all duration-300 flex items-center justify-center gap-1.5"
+                    data-target="#modal-umkm-2"
+                  >
+                    <i class="bi bi-info-circle"></i> Artikel
+                  </button>
+                  <a
+                    href="#UMKM"
+                    class="flex-1 bg-emerald-600 hover:bg-emerald-500 text-white py-2 rounded-xl text-xs font-semibold transition-all duration-300 flex items-center justify-center gap-1.5 shadow-lg shadow-emerald-950/20"
+                  >
+                    <i class="bi bi-bag"></i> Lihat Produk
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- [ROW 2 - RIGHT]: UMKM 3 - MAKANAN TRADISIONAL (Spans 4 Columns) -->
+            <div
+              class="lg:col-span-4 relative group w-full h-[450px] rounded-3xl overflow-hidden shadow-md border border-slate-200/60 bg-slate-900 transition-all duration-500 hover:shadow-2xl hover:-translate-y-1"
+              data-aos="fade-up"
+              data-aos-duration="800"
+              data-aos-delay="250"
+            >
+              <img
+                src="asset/img/dimsum/1 (2).jpg"
+                alt="UMKM Camilan"
+                class="absolute inset-0 w-full h-full object-cover transform scale-100 group-hover:scale-105 transition-transform duration-700 ease-out"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/50 to-transparent z-10"
+              ></div>
+              <div class="absolute top-6 left-6 z-20">
+                <span
+                  class="bg-emerald-600/90 backdrop-blur-md text-white text-[10px] tracking-widest font-extrabold px-3 py-1.5 rounded-full uppercase shadow-sm"
+                  >Olahan Pangan</span
+                >
+              </div>
+              <div
+                class="absolute inset-x-0 bottom-0 p-6 z-20 flex flex-col justify-end"
+              >
+                <div
+                  class="flex items-center gap-2 text-emerald-400 text-xs font-bold tracking-widest uppercase mb-1"
+                >
+                  <i class="bi bi-shop"></i> <span>UMKM Unggulan 03</span>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-2 tracking-tight">
+                  Dimsum NOE PAK JOE
+                </h3>
+                <p class="text-slate-300 text-xs opacity-90 mb-5 line-clamp-2">
+                  Produk makanan ringan renyah berbasis singkong dan pisang yang
+                  diolah secara organik harian.
+                </p>
+                <div class="flex gap-2">
+                  <button
+                    class="open-modal-btn flex-1 bg-white/20 hover:bg-white text-white hover:text-slate-900 border border-white/40 py-2 rounded-xl text-xs font-semibold backdrop-blur-sm transition-all duration-300 flex items-center justify-center gap-1.5"
+                    data-target="#modal-umkm-3"
+                  >
+                    <i class="bi bi-info-circle"></i> Artikel
+                  </button>
+                  <a
+                    href="#UMKM"
+                    class="flex-1 bg-emerald-600 hover:bg-emerald-500 text-white py-2 rounded-xl text-xs font-semibold transition-all duration-300 flex items-center justify-center gap-1.5 shadow-lg shadow-emerald-950/20"
+                  >
+                    <i class="bi bi-bag"></i> Lihat Produk
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 2. Modal Wisata -->
+      <div
+        id="modal-wisata"
+        class="modal-overlay fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/60 backdrop-blur-sm opacity-0 pointer-events-none transition-opacity duration-300"
+      >
+        <div
+          class="bg-white w-full max-w-2xl rounded-3xl overflow-hidden shadow-2xl transform scale-95 transition-transform duration-300 max-h-[90vh] flex flex-col"
+        >
+          <div
+            class="p-6 border-b border-slate-100 flex justify-between items-center"
+          >
+            <h3
+              class="text-lg font-bold text-slate-900 flex items-center gap-2"
+            >
+              <i class="bi bi-compass text-teal-600"></i> Eksplorasi Curug
+              Pasirwangi
+            </h3>
+            <button
+              class="close-modal-btn text-slate-400 hover:text-slate-600 text-xl"
+            >
+              <i class="bi bi-x-lg"></i>
+            </button>
+          </div>
+          <div
+            class="p-6 overflow-y-auto space-y-4 text-sm md:text-base text-slate-600 leading-relaxed"
+          >
+            <p>
+              Menawarkan bentang alam perbukitan hijau yang memanjakan mata,
+              Desa Sukamaju memiliki daya tarik wisata bernuansa
+              <strong>eco-tourism</strong> yang sangat potensial dikembangkan.
+              Objek wisata Curug Pasirwangi menawarkan pesona alami dengan
+              kejernihan airnya.
+            </p>
+            <p>
+              Udara yang bersih dan sejuk dipadukan dengan keramahan penduduk
+              setempat menjadikan kawasan ini sebagai tempat pelarian sempurna
+              dari hiruk-pikuk perkotaan sekaligus menjadi ruang edukasi budaya
+              bagi para pengunjung luar daerah.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- 3. Modal Pertanian -->
+      <div
+        id="modal-pertanian"
+        class="modal-overlay fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/60 backdrop-blur-sm opacity-0 pointer-events-none transition-opacity duration-300"
+      >
+        <div
+          class="bg-white w-full max-w-2xl rounded-3xl overflow-hidden shadow-2xl transform scale-95 transition-transform duration-300 max-h-[90vh] flex flex-col"
+        >
+          <div
+            class="p-6 border-b border-slate-100 flex justify-between items-center"
+          >
+            <h3
+              class="text-lg font-bold text-slate-900 flex items-center gap-2"
+            >
+              <i class="bi bi-flower1 text-lime-600"></i> Detail Sektor
+              Pertanian
+            </h3>
+            <button
+              class="close-modal-btn text-slate-400 hover:text-slate-600 text-xl"
+            >
+              <i class="bi bi-x-lg"></i>
+            </button>
+          </div>
+          <div
+            class="p-6 overflow-y-auto space-y-4 text-sm md:text-base text-slate-600 leading-relaxed"
+          >
+            <p>
+              Tanah subur komoditas unggulan hortikultura dan hamparan sawah
+              merupakan pilar utama penghidupan masyarakat Sukamaju. Melalui
+              pengelolaan terpadu dan adopsi teknologi pertanian yang tepat
+              guna, hasil bumi berupa padi, palawija, serta sayur-mayur segar
+              terus dioptimalkan.
+            </p>
+            <p>
+              Sektor agraria ini dikembangkan secara organik untuk menjaga
+              kualitas ekosistem tanah jangka panjang sekaligus menciptakan
+              ketahanan pangan yang kuat bagi seluruh internal desa maupun
+              suplai pasar regional.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- ================= MODALS COMPONENT (HIDDEN BY DEFAULT) ================= -->
+      <!-- 1. Modal Wisata -->
+      <div
+        id="modal-wisata"
+        class="modal-overlay fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/60 backdrop-blur-sm opacity-0 pointer-events-none transition-opacity duration-300"
+      >
+        <div
+          class="bg-white w-full max-w-2xl rounded-3xl overflow-hidden shadow-2xl transform scale-95 transition-transform duration-300 max-h-[90vh] flex flex-col"
+        >
+          <div
+            class="p-6 border-b border-slate-100 flex justify-between items-center"
+          >
+            <h3
+              class="text-lg font-bold text-slate-900 flex items-center gap-2"
+            >
+              <i class="bi bi-compass text-teal-600"></i> Detail Wisata Curug
+            </h3>
+            <button
+              class="close-modal-btn text-slate-400 hover:text-slate-600 text-xl"
+            >
+              <i class="bi bi-x-lg"></i>
+            </button>
+          </div>
+          <div
+            class="p-6 overflow-y-auto space-y-4 text-slate-600 leading-relaxed text-sm md:text-base"
+          >
+            <p>
+              Curug Pasirwangi merupakan destinasi alam andalan yang dikelola
+              langsung oleh kelompok sadar wisata (Pokdarwis) desa setempat
+              dengan menonjolkan keasrian alam pegunungan.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2. Modal Pertanian -->
+      <div
+        id="modal-pertanian"
+        class="modal-overlay fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/60 backdrop-blur-sm opacity-0 pointer-events-none transition-opacity duration-300"
+      >
+        <div
+          class="bg-white w-full max-w-2xl rounded-3xl overflow-hidden shadow-2xl transform scale-95 transition-transform duration-300 max-h-[90vh] flex flex-col"
+        >
+          <div
+            class="p-6 border-b border-slate-100 flex justify-between items-center"
+          >
+            <h3
+              class="text-lg font-bold text-slate-900 flex items-center gap-2"
+            >
+              <i class="bi bi-flower1 text-lime-600"></i> Detail Sektor
+              Pertanian
+            </h3>
+            <button
+              class="close-modal-btn text-slate-400 hover:text-slate-600 text-xl"
+            >
+              <i class="bi bi-x-lg"></i>
+            </button>
+          </div>
+          <div
+            class="p-6 overflow-y-auto space-y-4 text-slate-600 leading-relaxed text-sm md:text-base"
+          >
+            <p>
+              Sektor agraria mencakup produksi padi berkelanjutan serta budidaya
+              tanaman hortikultura bernilai jual tinggi yang menjadi tumpuan
+              utama mata pencaharian warga.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3. Modal UMKM 1 (Pizza) -->
+      <div
+        id="modal-umkm-1"
+        class="modal-overlay fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/60 backdrop-blur-sm opacity-0 pointer-events-none transition-opacity duration-300"
+      >
+        <div
+          class="bg-white w-full max-w-2xl rounded-3xl overflow-hidden shadow-2xl transform scale-95 transition-transform duration-300 max-h-[90vh] flex flex-col"
+        >
+          <div
+            class="p-6 border-b border-slate-100 flex justify-between items-center"
+          >
+            <h3
+              class="text-lg font-bold text-slate-900 flex items-center gap-2"
+            >
+              <i class="bi bi-shop text-emerald-600"></i> Potensi Pizza Rakyat
+            </h3>
+            <button
+              class="close-modal-btn text-slate-400 hover:text-slate-600 text-xl"
+            >
+              <i class="bi bi-x-lg"></i>
+            </button>
+          </div>
+          <div
+            class="p-6 overflow-y-auto space-y-4 text-slate-600 leading-relaxed text-sm md:text-base"
+          >
+            <p>
+              UMKM ini memproduksi panganan modern yang disesuaikan dengan lidah
+              lokal. Menggunakan bahan baku lokal berkualitas tinggi untuk
+              mendukung ekonomi rantai pasok lokal desa.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4. Modal UMKM 2 (Batik) -->
+      <div
+        id="modal-umkm-2"
+        class="modal-overlay fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/60 backdrop-blur-sm opacity-0 pointer-events-none transition-opacity duration-300"
+      >
+        <div
+          class="bg-white w-full max-w-2xl rounded-3xl overflow-hidden shadow-2xl transform scale-95 transition-transform duration-300 max-h-[90vh] flex flex-col"
+        >
+          <div
+            class="p-6 border-b border-slate-100 flex justify-between items-center"
+          >
+            <h3
+              class="text-lg font-bold text-slate-900 flex items-center gap-2"
+            >
+              <i class="bi bi-shop text-emerald-600"></i> Potensi Batik Tulis
+            </h3>
+            <button
+              class="close-modal-btn text-slate-400 hover:text-slate-600 text-xl"
+            >
+              <i class="bi bi-x-lg"></i>
+            </button>
+          </div>
+          <div
+            class="p-6 overflow-y-auto space-y-4 text-slate-600 leading-relaxed text-sm md:text-base"
+          >
+            <p>
+              Kerajinan batik tulis ini melestarikan motif kuno khas wilayah
+              setempat, digarap manual, dan menjadi produk bernilai seni tinggi
+              bermerek lokal asli.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 5. Modal UMKM 3 (Camilan) -->
+      <div
+        id="modal-umkm-3"
+        class="modal-overlay fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/60 backdrop-blur-sm opacity-0 pointer-events-none transition-opacity duration-300"
+      >
+        <div
+          class="bg-white w-full max-w-2xl rounded-3xl overflow-hidden shadow-2xl transform scale-95 transition-transform duration-300 max-h-[90vh] flex flex-col"
+        >
+          <div
+            class="p-6 border-b border-slate-100 flex justify-between items-center"
+          >
+            <h3
+              class="text-lg font-bold text-slate-900 flex items-center gap-2"
+            >
+              <i class="bi bi-shop text-emerald-600"></i> Potensi Keripik
+              Tradisional
+            </h3>
+            <button
+              class="close-modal-btn text-slate-400 hover:text-slate-600 text-xl"
+            >
+              <i class="bi bi-x-lg"></i>
+            </button>
+          </div>
+          <div
+            class="p-6 overflow-y-auto space-y-4 text-slate-600 leading-relaxed text-sm md:text-base"
+          >
+            <p>
+              Pemanfaatan ketahanan pangan hortikultura singkong dan pisang
+              diolah menjadi camilan bernilai tambah komersial tinggi dengan
+              kemasan kedap udara modis.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- umkm -->
     <section id="UMKM" class="py-24 w-full overflow-hidden bg-slate-50/50">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16">
@@ -1125,37 +1527,41 @@
       </div>
     </section>
     <!-- Gallery Section -->
-    <section id="gallery" class="py-12 bg-gray-50">
+    <section id="gallery" class="py-24 bg-gray-50">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <!-- Section Header -->
-        <div class="text-center mb-12">
+        <div class="text-center mb-16">
           <div class="flex items-center justify-center gap-4 mb-5">
             <div class="h-[1px] w-12 bg-slate-300"></div>
             <span
-              class="text-xs font-normal text-slate-500 uppercase tracking-[0.25em]"
+              class="text-xs font-bold text-slate-500 uppercase tracking-[0.25em]"
             >
               Gallery Wisata & Fasilitas Desa
             </span>
             <div class="h-[1px] w-12 bg-slate-300"></div>
           </div>
 
-          <h2 class="text-2xl md:text-5xl font-normal text-emerald-600 mb-6">
+          <h2 class="text-3xl md:text-5xl font-normal text-emerald-600 mb-6">
             Gallery <br class="hidden sm:block" />
             <span
-              class="bg-gradient-to-r from-emerald-600 font-bold via-emerald-500 to-teal-600 bg-clip-text text-transparent"
+              class="bg-gradient-to-r from-emerald-600 font-extrabold via-emerald-500 to-teal-600 bg-clip-text text-transparent"
             >
               Desa Sukamaju
             </span>
           </h2>
-          <p class="text-slate-500 max-w-md mx-auto mt-2">
+          <p class="text-slate-500 max-w-md mx-auto mt-2 text-sm md:text-base">
             Menikmati keindahan lanskap alam, fasilitas, dan pesona pedesaan
             yang asri serta menenangkan jiwa.
           </p>
         </div>
-        <!-- Gallery Grid (Responsif & Kreatif) -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <!-- Gallery Grid (Premium Asymmetric Bento Layout) -->
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-6 auto-rows-auto"
+        >
+          <!-- ITEM 1: LAPANG VOLLY (Lebih Lebar di Kiri - Row 1) -->
           <div
-            class="gallery-item relative overflow-hidden rounded-xl shadow-lg group cursor-pointer aspect-[4/3]"
+            class="gallery-item relative overflow-hidden rounded-3xl shadow-md border border-slate-200/60 bg-slate-900 group cursor-pointer lg:col-span-7 h-[380px] sm:h-[420px] transition-all duration-500 hover:shadow-2xl hover:-translate-y-1"
             data-src="asset/img/lapangvoly1.jpg"
             data-category="Fasilitas Olahraga"
             data-title="Lapang Volly Desa Sukamaju"
@@ -1164,36 +1570,35 @@
             <img
               src="asset/img/lapangvoly1.jpg"
               alt="Lapang Volly"
-              class="w-full h-full object-cover transform transition duration-700 group-hover:scale-110"
+              class="w-full h-full object-cover transform transition duration-700 group-hover:scale-105"
             />
-
             <div
-              class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/20 to-transparent opacity-60 group-hover:opacity-90 transition-opacity duration-300"
+              class="absolute inset-0 bg-gradient-to-t from-slate-950/95 via-slate-950/30 to-transparent opacity-80 group-hover:opacity-95 transition-opacity duration-300"
             ></div>
-
             <div
-              class="absolute inset-x-0 bottom-0 p-5 flex flex-col justify-end transform transition-transform duration-300 translate-y-12 group-hover:translate-y-0"
+              class="absolute inset-x-0 bottom-0 p-6 flex flex-col justify-end transform transition-transform duration-300 translate-y-6 group-hover:translate-y-0"
             >
               <span
-                class="text-[10px] font-semibold text-emerald-400 uppercase tracking-wider mb-1 block"
+                class="text-[10px] font-bold text-emerald-400 uppercase tracking-widest mb-1.5 block"
                 >Fasilitas Olahraga</span
               >
-              <h3 class="text-lg font-bold text-white leading-tight mb-2">
+              <h3
+                class="text-xl font-bold text-white leading-tight mb-2 tracking-tight"
+              >
                 Lapang Volly Desa Sukamaju
               </h3>
               <p
-                class="text-xs text-slate-300 font-light opacity-0 group-hover:opacity-100 transition-opacity duration-300 line-clamp-2"
+                class="text-xs text-slate-300 font-light opacity-0 group-hover:opacity-100 transition-opacity duration-300 line-clamp-2 max-w-xl"
               >
                 Lapang Volly Desa Sukamaju merupakan fasilitas olahraga yang
                 menyediakan ruang bagi masyarakat...
               </p>
               <div
-                class="h-[2px] w-0 bg-emerald-500 mt-3 transition-all duration-300 group-hover:w-12"
+                class="h-[2px] w-0 bg-emerald-500 mt-4 transition-all duration-300 group-hover:w-16"
               ></div>
             </div>
-
             <div
-              class="absolute top-4 right-4 bg-black/40 p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+              class="absolute top-5 right-5 bg-black/40 backdrop-blur-sm p-2.5 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"
             >
               <svg
                 class="w-4 h-4 text-white"
@@ -1211,8 +1616,9 @@
             </div>
           </div>
 
+          <!-- ITEM 2: PUNCAK BUKIT HIJAU (Lebih Ramping di Kanan - Row 1) -->
           <div
-            class="gallery-item relative overflow-hidden rounded-xl shadow-lg group cursor-pointer aspect-[4/3]"
+            class="gallery-item relative overflow-hidden rounded-3xl shadow-md border border-slate-200/60 bg-slate-900 group cursor-pointer lg:col-span-5 h-[380px] sm:h-[420px] transition-all duration-500 hover:shadow-2xl hover:-translate-y-1"
             data-src="asset/img/hero.jpg"
             data-category="Wisata Alam"
             data-title="Puncak Bukit Hijau"
@@ -1221,19 +1627,21 @@
             <img
               src="asset/img/hero.jpg"
               alt="Puncak Bukit Hijau"
-              class="w-full h-full object-cover transform transition duration-700 group-hover:scale-110"
+              class="w-full h-full object-cover transform transition duration-700 group-hover:scale-105"
             />
             <div
-              class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/20 to-transparent opacity-60 group-hover:opacity-90 transition-opacity duration-300"
+              class="absolute inset-0 bg-gradient-to-t from-slate-950/95 via-slate-950/30 to-transparent opacity-80 group-hover:opacity-95 transition-opacity duration-300"
             ></div>
             <div
-              class="absolute inset-x-0 bottom-0 p-5 flex flex-col justify-end transform transition-transform duration-300 translate-y-12 group-hover:translate-y-0"
+              class="absolute inset-x-0 bottom-0 p-6 flex flex-col justify-end transform transition-transform duration-300 translate-y-6 group-hover:translate-y-0"
             >
               <span
-                class="text-[10px] font-semibold text-emerald-400 uppercase tracking-wider mb-1 block"
+                class="text-[10px] font-bold text-emerald-400 uppercase tracking-widest mb-1.5 block"
                 >Wisata Alam</span
               >
-              <h3 class="text-lg font-bold text-white leading-tight mb-2">
+              <h3
+                class="text-xl font-bold text-white leading-tight mb-2 tracking-tight"
+              >
                 Puncak Bukit Hijau
               </h3>
               <p
@@ -1243,11 +1651,11 @@
                 yang meneduhkan pikiran.
               </p>
               <div
-                class="h-[2px] w-0 bg-emerald-500 mt-3 transition-all duration-300 group-hover:w-12"
+                class="h-[2px] w-0 bg-emerald-500 mt-4 transition-all duration-300 group-hover:w-16"
               ></div>
             </div>
             <div
-              class="absolute top-4 right-4 bg-black/40 p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+              class="absolute top-5 right-5 bg-black/40 backdrop-blur-sm p-2.5 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"
             >
               <svg
                 class="w-4 h-4 text-white"
@@ -1265,8 +1673,9 @@
             </div>
           </div>
 
+          <!-- ITEM 3: CURUG PASIRWANGI (Lebih Ramping di Kiri - Row 2) -->
           <div
-            class="gallery-item relative overflow-hidden rounded-xl shadow-lg group cursor-pointer aspect-[4/3]"
+            class="gallery-item relative overflow-hidden rounded-3xl shadow-md border border-slate-200/60 bg-slate-900 group cursor-pointer lg:col-span-5 h-[380px] sm:h-[450px] transition-all duration-500 hover:shadow-2xl hover:-translate-y-1"
             data-src="asset/img/curug.jpg"
             data-category="Potensi Wisata"
             data-title="Curug Pasirwangi"
@@ -1275,19 +1684,21 @@
             <img
               src="asset/img/curug.jpg"
               alt="Curug Pasirwangi"
-              class="w-full h-full object-cover transform transition duration-700 group-hover:scale-110"
+              class="w-full h-full object-cover transform transition duration-700 group-hover:scale-105"
             />
             <div
-              class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/20 to-transparent opacity-60 group-hover:opacity-90 transition-opacity duration-300"
+              class="absolute inset-0 bg-gradient-to-t from-slate-950/95 via-slate-950/30 to-transparent opacity-80 group-hover:opacity-95 transition-opacity duration-300"
             ></div>
             <div
-              class="absolute inset-x-0 bottom-0 p-5 flex flex-col justify-end transform transition-transform duration-300 translate-y-12 group-hover:translate-y-0"
+              class="absolute inset-x-0 bottom-0 p-6 flex flex-col justify-end transform transition-transform duration-300 translate-y-6 group-hover:translate-y-0"
             >
               <span
-                class="text-[10px] font-semibold text-emerald-400 uppercase tracking-wider mb-1 block"
+                class="text-[10px] font-bold text-emerald-400 uppercase tracking-widest mb-1.5 block"
                 >Potensi Wisata</span
               >
-              <h3 class="text-lg font-bold text-white leading-tight mb-2">
+              <h3
+                class="text-xl font-bold text-white leading-tight mb-2 tracking-tight"
+              >
                 Curug Pasirwangi
               </h3>
               <p
@@ -1297,11 +1708,11 @@
                 menakjubkan di Desa Sukamaju, Sumedang.
               </p>
               <div
-                class="h-[2px] w-0 bg-emerald-500 mt-3 transition-all duration-300 group-hover:w-12"
+                class="h-[2px] w-0 bg-emerald-500 mt-4 transition-all duration-300 group-hover:w-16"
               ></div>
             </div>
             <div
-              class="absolute top-4 right-4 bg-black/40 p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+              class="absolute top-5 right-5 bg-black/40 backdrop-blur-sm p-2.5 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"
             >
               <svg
                 class="w-4 h-4 text-white"
@@ -1319,8 +1730,9 @@
             </div>
           </div>
 
+          <!-- ITEM 4: TERASERING SAWAH (Lebih Lebar di Kanan - Row 2) -->
           <div
-            class="gallery-item relative overflow-hidden rounded-xl shadow-lg group cursor-pointer aspect-[4/3]"
+            class="gallery-item relative overflow-hidden rounded-3xl shadow-md border border-slate-200/60 bg-slate-900 group cursor-pointer lg:col-span-7 h-[380px] sm:h-[450px] transition-all duration-500 hover:shadow-2xl hover:-translate-y-1"
             data-src="asset/img/IMG_20260708_163837_257.jpg"
             data-category="Ekowisata"
             data-title="Terasering Sawah Asri"
@@ -1329,33 +1741,35 @@
             <img
               src="asset/img/IMG_20260708_163837_257.jpg"
               alt="Terasering Sawah"
-              class="w-full h-full object-cover transform transition duration-700 group-hover:scale-110"
+              class="w-full h-full object-cover transform transition duration-700 group-hover:scale-105"
             />
             <div
-              class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/20 to-transparent opacity-60 group-hover:opacity-90 transition-opacity duration-300"
+              class="absolute inset-0 bg-gradient-to-t from-slate-950/95 via-slate-950/30 to-transparent opacity-80 group-hover:opacity-95 transition-opacity duration-300"
             ></div>
             <div
-              class="absolute inset-x-0 bottom-0 p-5 flex flex-col justify-end transform transition-transform duration-300 translate-y-12 group-hover:translate-y-0"
+              class="absolute inset-x-0 bottom-0 p-6 flex flex-col justify-end transform transition-transform duration-300 translate-y-6 group-hover:translate-y-0"
             >
               <span
-                class="text-[10px] font-semibold text-emerald-400 uppercase tracking-wider mb-1 block"
+                class="text-[10px] font-bold text-emerald-400 uppercase tracking-widest mb-1.5 block"
                 >Ekowisata</span
               >
-              <h3 class="text-lg font-bold text-white leading-tight mb-2">
+              <h3
+                class="text-xl font-bold text-white leading-tight mb-2 tracking-tight"
+              >
                 Terasering Sawah Asri
               </h3>
               <p
-                class="text-xs text-slate-300 font-light opacity-0 group-hover:opacity-100 transition-opacity duration-300 line-clamp-2"
+                class="text-xs text-slate-300 font-light opacity-0 group-hover:opacity-100 transition-opacity duration-300 line-clamp-2 max-w-xl"
               >
                 Bentangan sawah bertingkat hijau subur yang mencerminkan
                 kearifan lokal agraris masyarakat setempat.
               </p>
               <div
-                class="h-[2px] w-0 bg-emerald-500 mt-3 transition-all duration-300 group-hover:w-12"
+                class="h-[2px] w-0 bg-emerald-500 mt-4 transition-all duration-300 group-hover:w-16"
               ></div>
             </div>
             <div
-              class="absolute top-4 right-4 bg-black/40 p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+              class="absolute top-5 right-5 bg-black/40 backdrop-blur-sm p-2.5 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"
             >
               <svg
                 class="w-4 h-4 text-white"
@@ -1374,6 +1788,7 @@
           </div>
         </div>
 
+        <!-- LIGHTBOX COMPONENT (TIDAK ADA PERUBAHAN ID SAMA SEKALI) -->
         <div
           id="gallery-lightbox"
           class="fixed inset-0 z-[100] hidden bg-black/90 backdrop-blur-sm items-center justify-center p-4 sm:p-8 opacity-0 transition-opacity duration-300"
@@ -1425,103 +1840,6 @@
         </div>
       </div>
     </section>
-    <!-- Section Kolom Opini Warga -->
-    <section id="opini" class="py-12 px-4 bg-gray-50">
-      <div class="max-w-3xl mx-auto">
-        <div class="text-center mb-8">
-          <h2 class="text-2xl font-bold text-emerald-600">
-            Kolom Aspirasi & Opini Warga
-          </h2>
-          <p class="text-sm text-gray-600 mt-2">
-            Sampaikan masukan, kritik, atau saran untuk kemajuan desa kita.
-          </p>
-        </div>
-
-        <!-- Wadah Form Embed -->
-        <div
-          class="bg-white rounded-xl shadow-md overflow-hidden p-4 md:p-6 border border-gray-100"
-        >
-          <div class="w-full overflow-hidden">
-            <!-- Tempel (Paste) kode iframe Google Forms di bawah ini -->
-            <iframe
-              src="https://docs.google.com/forms/d/e/1FAIpQLSeTbIjxidu0iIv209FyC8-IoCeTVZVNBiV7CqbJuivWSHU2rg/viewform?embedded=true"
-              width="640"
-              height="691"
-              frameborder="0"
-              marginheight="0"
-              marginwidth="0"
-              >Memuat…</iframe
-            >
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- 1. Section Footer / Kontak Utama -->
-    <section
-      id="kontak-desa"
-      class="bg-gray-900 text-white py-12 px-4 sm:px-6 lg:px-8"
-    >
-      <div
-        class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center"
-      >
-        <!-- Info Kontak -->
-        <div>
-          <span
-            class="text-emerald-400 font-semibold text-sm uppercase tracking-wider"
-            >Layanan Warga</span
-          >
-          <h2 class="text-2xl sm:text-3xl font-bold mt-1 mb-4">
-            Kontak Pihak Desa (Kopo)
-          </h2>
-          <p class="text-gray-400 text-sm sm:text-base mb-6">
-            Butuh layanan administrasi atau punya pertanyaan seputar desa?
-            Silakan hubungi perangkat desa melalui jalur resmi di bawah ini.
-          </p>
-
-          <div class="space-y-3 text-sm sm:text-base text-gray-300">
-            <div class="flex items-start gap-3">
-              <i class="bi bi-geo-alt-fill text-emerald-400 text-xl mt-0.5"></i>
-              <span
-                >Jl. Raya Desa Kopo No. 12, Kec. Kutawaringin, Kab.
-                Bandung</span
-              >
-            </div>
-            <div class="flex items-center gap-3">
-              <i class="bi bi-telephone-fill text-emerald-400 text-xl"></i>
-              <a
-                href="tel:+6281234567890"
-                class="hover:text-emerald-400 transition-colors"
-                >+62 812-3456-7890 (Kantor Desa)</a
-              >
-            </div>
-            <div class="flex items-center gap-3">
-              <i class="bi bi-envelope-fill text-emerald-400 text-xl"></i>
-              <a
-                href="mailto:pemdes.kopo@email.com"
-                class="hover:text-emerald-400 transition-colors"
-                >pemdes.kopo@email.com</a
-              >
-            </div>
-          </div>
-        </div>
-
-        <!-- Google Maps Embed -->
-        <div
-          class="w-full h-64 sm:h-80 rounded-2xl overflow-hidden shadow-lg border border-gray-800"
-        >
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15841.5!2d107.5!3d-6.9!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNsKwNTQnMDIuMCJTIDEwN8KwMzAnMDAuMCJF!5e0!3m2!1sid!2sid!4v1650000000000!5m2!1sid!2sid"
-            width="100%"
-            height="100%"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          >
-          </iframe>
-        </div>
-      </div>
-    </section>
 
     <!-- 2. Floating Action Button (FAB) Mengambang di Kanan Bawah -->
     <div class="fixed bottom-6 right-6 z-50 flex flex-col items-end">
@@ -1543,8 +1861,7 @@
 
         <!-- Opsi Email -->
         <a
-          href="mailto:desasukamaju1982@gmail.com
-?subject=Pertanyaan%20Warga%20Desa"
+          href="mailto:desasukamaju1982@gmail.com?subject=Pertanyaan%20Warga%20Desa"
           class="flex items-center gap-2.5 bg-sky-600 hover:bg-sky-700 text-white text-xs sm:text-sm font-medium py-2.5 px-4 rounded-full shadow-lg transition-transform hover:scale-105"
         >
           <i class="bi bi-envelope-fill text-lg"></i>
@@ -1619,7 +1936,6 @@
         </div>
       </div>
     </section>
-
     <footer
       class="bg-slate-950 border-t border-slate-900 py-6 text-center text-sm text-slate-500"
     >
@@ -1627,11 +1943,9 @@
         © 2026 Pemerintah Desa Sukamaju. Dibuat oleh Tim KKN Universitas Masoem.
       </p>
     </footer>
-
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="landing.js"></script>
-
     <!-- Script Counter Angka Otomatis -->
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   </body>

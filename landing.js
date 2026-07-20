@@ -266,3 +266,25 @@ $(document).ready(function () {
     }
   });
 });
+// swiper artikel
+jQuery(document).ready(function ($) {
+  // FUNGSI UTAMA: Membuka Modal saat tombol diklik
+  $(".open-modal-btn").on("click", function () {
+    const targetModal = $(this).attr("data-target");
+    const $modal = $(targetModal);
+
+    $modal.removeClass("pointer-events-none").addClass("opacity-100");
+    $modal.find(".bg-white").removeClass("scale-95").addClass("scale-100");
+    $("body").addClass("overflow-hidden"); // Kunci scroll layar utama
+  });
+
+  // FUNGSI UTAMA: Menutup Modal
+  $(".close-modal-btn, .modal-overlay").on("click", function (e) {
+    if (e.target !== this && !$(this).hasClass("close-modal-btn")) return;
+    const $modal = $(this).closest(".modal-overlay");
+
+    $modal.addClass("pointer-events-none").removeClass("opacity-100");
+    $modal.find(".bg-white").removeClass("scale-100").addClass("scale-95");
+    $("body").removeClass("overflow-hidden"); // Aktifkan scroll lagi
+  });
+});
