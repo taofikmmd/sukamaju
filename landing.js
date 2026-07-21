@@ -288,3 +288,74 @@ jQuery(document).ready(function ($) {
     $("body").removeClass("overflow-hidden"); // Aktifkan scroll lagi
   });
 });
+// curug
+$(document).ready(function () {
+  // Efek interaktif tombol "Mode Fokus Peta" menggunakan jQuery
+  let isFocused = false;
+
+  $("#btnToggleOverlay").click(function () {
+    isFocused = !isFocused;
+    if (isFocused) {
+      $("#mapContainer").toggleClass(
+        "fixed inset-0 z-50 h-screen max-w-none rounded-none",
+      );
+      $(this).html('<i class="bi bi-fullscreen-exit"></i> Keluar Mode Fokus');
+      $("body").css("overflow", "hidden");
+    } else {
+      location.reload(); // Reset kembali ke posisi awal widget
+    }
+  });
+});
+// batik
+$(document).ready(function () {
+  let isFocused = false;
+
+  $("#btnToggleOverlay").click(function () {
+    isFocused = !isFocused;
+    if (isFocused) {
+      $("#mapContainer").toggleClass(
+        "fixed inset-0 z-70 h-screen max-w-none rounded-none",
+      );
+      $(this).html('<i class="bi bi-fullscreen-exit"></i> Keluar Mode Fokus');
+      $("body").css("overflow", "hidden");
+    } else {
+      location.reload();
+    }
+  });
+});
+
+// pizza
+$(document).ready(function () {
+  let isFocused = false;
+
+  $("#btnToggleOverlay").click(function () {
+    isFocused = !isFocused;
+    if (isFocused) {
+      $("#mapContainer").toggleClass(
+        "fixed inset-0 z-70 h-screen max-w-none rounded-none",
+      );
+      $(this).html('<i class="bi bi-fullscreen-exit"></i> Keluar Mode Fokus');
+      $("body").css("overflow", "hidden");
+    } else {
+      location.reload();
+    }
+  });
+});
+
+// dimsum
+$(document).ready(function () {
+  let isFocused = false;
+
+  $("#btnToggleOverlay").click(function () {
+    isFocused = !isFocused;
+    if (isFocused) {
+      $("#mapContainer").toggleClass(
+        "fixed inset-0 z-70 h-screen max-w-none rounded-none",
+      );
+      $(this).html('<i class="bi bi-fullscreen-exit"></i> Keluar Mode Fokus');
+      $("body").css("overflow", "hidden");
+    } else {
+      location.reload();
+    }
+  });
+});
